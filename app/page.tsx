@@ -67,34 +67,34 @@ export default function Home() {
       {/* Hero */}
       <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-emerald-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 bg-emerald-500/20 border border-emerald-500/30 text-emerald-300 text-sm font-medium px-4 py-1.5 rounded-full mb-6">
+          <div className="animate-fade-up inline-flex items-center gap-2 bg-emerald-500/20 border border-emerald-500/30 text-emerald-300 text-sm font-medium px-4 py-1.5 rounded-full mb-6">
             <span className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
             Free finance tools, no account needed
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+          <h1 className="animate-fade-up delay-75 text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
             Finance calculators built for{" "}
             <span className="text-emerald-400">real life</span>
           </h1>
-          <p className="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
+          <p className="animate-fade-up delay-150 text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
             Whether you freelance, drive for apps, or just want to know when you can retire - get clear numbers without the jargon.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="animate-fade-up delay-225 flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="#calculators"
-              className="bg-emerald-500 hover:bg-emerald-400 text-white font-semibold px-8 py-3.5 rounded-xl transition-colors text-lg"
+              className="bg-emerald-500 hover:bg-emerald-400 text-white font-semibold px-8 py-3.5 rounded-xl transition-colors duration-200 text-lg"
             >
               Browse Calculators
             </Link>
             <Link
               href="/calculators/freelancer-tax"
-              className="bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-3.5 rounded-xl transition-colors text-lg border border-white/20"
+              className="bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-3.5 rounded-xl transition-colors duration-200 text-lg border border-white/20"
             >
               Freelancer Tax Calculator
             </Link>
           </div>
 
           {/* Stats */}
-          <div className="flex flex-col sm:flex-row justify-center gap-8 mt-14 pt-10 border-t border-white/10">
+          <div className="animate-fade-up delay-300 flex flex-col sm:flex-row justify-center gap-8 mt-14 pt-10 border-t border-white/10">
             {stats.map((s) => (
               <div key={s.label} className="text-center">
                 <div className="text-3xl font-bold text-emerald-400">{s.value}</div>
@@ -115,21 +115,23 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {calculators.map((calc) => (
+          {calculators.map((calc, i) => (
             <Link
               key={calc.href}
               href={calc.href}
-              className="group bg-white rounded-2xl border border-slate-200 p-6 hover:border-emerald-300 hover:shadow-lg hover:shadow-emerald-500/5 transition-all duration-200"
+              className={`animate-fade-up group bg-white rounded-2xl border border-slate-200 p-6 hover:border-emerald-300 hover:shadow-lg hover:shadow-emerald-500/5 hover:-translate-y-1 transition-all duration-200 ${
+                i === 0 ? "" : i === 1 ? "delay-75" : i === 2 ? "delay-150" : i === 3 ? "delay-225" : i === 4 ? "delay-300" : "delay-375"
+              }`}
             >
               <div className="flex items-start justify-between mb-4">
-                <span className="text-3xl">{calc.emoji}</span>
+                <span className="text-3xl transition-transform duration-200 group-hover:scale-110">{calc.emoji}</span>
                 {calc.badge && (
                   <span className="text-xs font-semibold bg-emerald-50 text-emerald-600 border border-emerald-200 px-2.5 py-1 rounded-full">
                     {calc.badge}
                   </span>
                 )}
               </div>
-              <h3 className="text-lg font-semibold text-slate-900 mb-2 group-hover:text-emerald-600 transition-colors">
+              <h3 className="text-lg font-semibold text-slate-900 mb-2 group-hover:text-emerald-600 transition-colors duration-200">
                 {calc.title}
               </h3>
               <p className="text-sm text-slate-500 leading-relaxed mb-4">{calc.description}</p>
@@ -158,19 +160,22 @@ export default function Home() {
                 icon: "⚡",
                 title: "No fluff",
                 desc: "Type your numbers, get your answer. No sign-up, no email capture, no upsell.",
+                delay: "",
               },
               {
                 icon: "🔒",
                 title: "Private by design",
                 desc: "All calculations happen in your browser. Your financial data never leaves your device.",
+                delay: "delay-150",
               },
               {
                 icon: "🎯",
                 title: "Built for gig workers",
                 desc: "Most calculator sites were built for W-2 employees. We cover freelancers, 1099s, and side hustlers too.",
+                delay: "delay-300",
               },
             ].map((f) => (
-              <div key={f.title} className="text-center">
+              <div key={f.title} className={`animate-fade-up ${f.delay} text-center`}>
                 <div className="text-4xl mb-3">{f.icon}</div>
                 <h3 className="text-lg font-semibold text-slate-900 mb-2">{f.title}</h3>
                 <p className="text-sm text-slate-500 leading-relaxed">{f.desc}</p>

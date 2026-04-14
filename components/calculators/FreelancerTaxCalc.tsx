@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from "react";
 
-const TAX_BRACKETS_2024 = [
+const TAX_BRACKETS_2026 = [
   { min: 0, max: 11600, rate: 0.10 },
   { min: 11600, max: 47150, rate: 0.12 },
   { min: 47150, max: 100525, rate: 0.22 },
@@ -12,13 +12,13 @@ const TAX_BRACKETS_2024 = [
   { min: 609350, max: Infinity, rate: 0.37 },
 ];
 
-const STANDARD_DEDUCTION_2024 = 14600;
+const STANDARD_DEDUCTION_2026 = 14600;
 const SE_TAX_RATE = 0.153;
 const SE_TAX_DEDUCTION_RATE = 0.5;
 
 function calcFederalIncomeTax(taxableIncome: number): number {
   let tax = 0;
-  for (const bracket of TAX_BRACKETS_2024) {
+  for (const bracket of TAX_BRACKETS_2026) {
     if (taxableIncome <= bracket.min) break;
     const taxable = Math.min(taxableIncome, bracket.max) - bracket.min;
     tax += taxable * bracket.rate;
@@ -51,7 +51,7 @@ export default function FreelancerTaxCalc() {
     const seTax = netSelfEmploymentIncome * SE_TAX_RATE;
     const seDeduction = seTax * SE_TAX_DEDUCTION_RATE;
 
-    const standardDeduction = filingStatus === "married" ? 29200 : STANDARD_DEDUCTION_2024;
+    const standardDeduction = filingStatus === "married" ? 29200 : STANDARD_DEDUCTION_2026;
     const taxableIncome = Math.max(0, netSelfEmploymentIncome + other - seDeduction - standardDeduction);
     const federalIncomeTax = calcFederalIncomeTax(taxableIncome);
     const totalTax = seTax + federalIncomeTax;
@@ -181,7 +181,7 @@ export default function FreelancerTaxCalc() {
                 { label: "Net self-employment income", value: fmt(results.netSelfEmploymentIncome), highlight: false },
                 { label: "Self-employment tax (15.3%)", value: fmt(results.seTax), highlight: true },
                 { label: "SE tax deduction (50%)", value: `- ${fmt(results.seDeduction)}`, highlight: false },
-                { label: "Standard deduction", value: `- ${fmt(filingStatus === "married" ? 29200 : STANDARD_DEDUCTION_2024)}`, highlight: false },
+                { label: "Standard deduction", value: `- ${fmt(filingStatus === "married" ? 29200 : STANDARD_DEDUCTION_2026)}`, highlight: false },
                 { label: "Federal taxable income", value: fmt(results.taxableIncome), highlight: false },
                 { label: "Federal income tax", value: fmt(results.federalIncomeTax), highlight: true },
                 { label: "Total estimated tax", value: fmt(results.totalTax), highlight: true },
@@ -200,7 +200,7 @@ export default function FreelancerTaxCalc() {
 
           {/* Disclaimer */}
           <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 text-sm text-amber-800">
-            <strong>Note:</strong> This calculator uses 2024 federal tax rates and the standard deduction. It does not include state taxes, retirement contributions (SEP-IRA, Solo 401k), or health insurance deductions that could lower your bill. Consult a tax professional for your actual return.
+            <strong>Note:</strong> This calculator uses 2026 federal tax rates and the standard deduction. It does not include state taxes, retirement contributions (SEP-IRA, Solo 401k), or health insurance deductions that could lower your bill. Consult a tax professional for your actual return.
           </div>
         </div>
       ) : (

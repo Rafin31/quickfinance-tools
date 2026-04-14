@@ -26,7 +26,7 @@ export default function FreelancerTaxGuidePage() {
       <div className="mb-8">
         <div className="flex items-center gap-3 mb-4">
           <span className="text-xs font-semibold bg-emerald-50 text-emerald-600 border border-emerald-200 px-2.5 py-1 rounded-full">Taxes</span>
-          <span className="text-sm text-slate-400">April 10, 2025 · 9 min read</span>
+          <span className="text-sm text-slate-400">April 10, 2026 · 9 min read</span>
         </div>
         <h1 className="text-3xl sm:text-4xl font-bold text-slate-900 leading-tight mb-4">
           The Complete Guide to Quarterly Estimated Taxes for Freelancers
@@ -45,7 +45,7 @@ export default function FreelancerTaxGuidePage() {
           <h2 className="text-2xl font-bold text-slate-900 mb-4">Why Freelancers Pay Taxes Differently</h2>
           <p className="leading-relaxed mb-4">When you work a regular job, your employer takes money out of each paycheck before you ever see it. Federal income tax, Social Security, Medicare - all withheld automatically. You might get a refund in April, but you never have to think about sending money to the IRS during the year.</p>
           <p className="leading-relaxed mb-4">Freelancing works completely differently. Nobody withholds anything. Every dollar of client payment lands in your account at full value. The tax obligation is still there - you just handle it yourself, four times per year.</p>
-          <p className="leading-relaxed">If you fail to make quarterly payments and you owe more than $1,000 at tax time, the IRS charges an underpayment penalty. As of 2024, this is 8% annualized - not a crushing amount, but entirely avoidable.</p>
+          <p className="leading-relaxed">If you fail to make quarterly payments and you owe more than $1,000 at tax time, the IRS charges an underpayment penalty. As of 2026, this is 8% annualized - not a crushing amount, but entirely avoidable.</p>
         </section>
 
         <section>
@@ -65,13 +65,13 @@ export default function FreelancerTaxGuidePage() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-bold text-slate-900 mb-4">The 2024 Quarterly Due Dates</h2>
+          <h2 className="text-2xl font-bold text-slate-900 mb-4">The 2026 Quarterly Due Dates</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
             {[
-              { quarter: "Q1 (Jan-Mar income)", due: "April 15, 2024" },
-              { quarter: "Q2 (Apr-May income)", due: "June 17, 2024" },
-              { quarter: "Q3 (Jun-Aug income)", due: "September 16, 2024" },
-              { quarter: "Q4 (Sep-Dec income)", due: "January 15, 2025" },
+              { quarter: "Q1 (Jan-Mar income)", due: "April 15, 2026" },
+              { quarter: "Q2 (Apr-May income)", due: "June 15, 2026" },
+              { quarter: "Q3 (Jun-Aug income)", due: "September 15, 2026" },
+              { quarter: "Q4 (Sep-Dec income)", due: "January 15, 2027" },
             ].map((q) => (
               <div key={q.quarter} className="bg-white border border-slate-200 rounded-xl p-4">
                 <p className="text-sm text-slate-500 mb-1">{q.quarter}</p>
@@ -114,7 +114,7 @@ export default function FreelancerTaxGuidePage() {
             <li>Equipment purchases (computer, desk, camera, audio gear)</li>
             <li>Professional development (courses, conferences, books)</li>
             <li>Health insurance premiums (self-employed deduction)</li>
-            <li>Business mileage at IRS standard rate (67 cents/mile in 2024)</li>
+            <li>Business mileage at IRS standard rate (67 cents/mile in 2026)</li>
             <li>Retirement contributions (SEP-IRA, Solo 401k can dramatically lower taxable income)</li>
           </ul>
           <p className="leading-relaxed">A SEP-IRA lets you contribute up to 25% of net self-employment income, reducing your taxable income dollar for dollar. This is one of the most powerful tools available to freelancers.</p>

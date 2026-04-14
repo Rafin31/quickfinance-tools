@@ -11,7 +11,7 @@ const posts = [
     slug: "freelancer-quarterly-taxes-guide",
     title: "The Complete Guide to Quarterly Estimated Taxes for Freelancers",
     description: "Everything a 1099 contractor needs to know about self-employment tax, quarterly due dates, and how to avoid IRS penalties.",
-    date: "April 10, 2025",
+    date: "April 10, 2026",
     readTime: "9 min read",
     tag: "Taxes",
   },
@@ -19,7 +19,7 @@ const posts = [
     slug: "debt-snowball-vs-avalanche",
     title: "Debt Snowball vs Avalanche: Which Method Actually Works?",
     description: "A data-driven comparison of the two main debt payoff strategies. When to use each, and why the right method depends on your psychology.",
-    date: "April 8, 2025",
+    date: "April 8, 2026",
     readTime: "8 min read",
     tag: "Debt",
   },
@@ -27,7 +27,7 @@ const posts = [
     slug: "how-much-emergency-fund-freelancer",
     title: "How Much Emergency Fund Does a Freelancer Actually Need?",
     description: "The 3-6 month rule was designed for salaried workers. Here is how to calculate the right emergency fund size for variable income.",
-    date: "April 5, 2025",
+    date: "April 5, 2026",
     readTime: "7 min read",
     tag: "Savings",
   },
@@ -43,7 +43,7 @@ export default function BlogPage() {
       <div className="space-y-6">
         {posts.map((post) => (
           <Link key={post.slug} href={`/blog/${post.slug}`}
-            className="block bg-white rounded-2xl border border-slate-200 p-6 hover:border-emerald-300 hover:shadow-md transition-all group">
+            className="block bg-white rounded-2xl border border-slate-200 p-6 hover:border-emerald-300 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 group">
             <div className="flex items-center gap-3 mb-3">
               <span className="text-xs font-semibold bg-emerald-50 text-emerald-600 border border-emerald-200 px-2.5 py-1 rounded-full">{post.tag}</span>
               <span className="text-xs text-slate-400">{post.date}</span>

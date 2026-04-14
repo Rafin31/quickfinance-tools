@@ -22,7 +22,7 @@ export default function DebtSnowballAvalanchePage() {
       <div className="mb-8">
         <div className="flex items-center gap-3 mb-4">
           <span className="text-xs font-semibold bg-emerald-50 text-emerald-600 border border-emerald-200 px-2.5 py-1 rounded-full">Debt</span>
-          <span className="text-sm text-slate-400">April 8, 2025 · 8 min read</span>
+          <span className="text-sm text-slate-400">April 8, 2026 · 8 min read</span>
         </div>
         <h1 className="text-3xl sm:text-4xl font-bold text-slate-900 leading-tight mb-4">
           Debt Snowball vs Avalanche: Which Method Actually Works?

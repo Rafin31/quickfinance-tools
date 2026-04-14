@@ -43,7 +43,7 @@ const faqs = [
   },
   {
     q: "When are quarterly estimated taxes due?",
-    a: "For 2024, the due dates are April 15, June 17, September 16, and January 15, 2025. If you expect to owe more than $1,000 in taxes for the year, you should be making quarterly payments to avoid IRS penalties.",
+    a: "For 2026, the due dates are April 15, June 15, September 15, and January 15, 2027. If you expect to owe more than $1,000 in taxes for the year, you should be making quarterly payments to avoid IRS penalties.",
   },
   {
     q: "What business expenses can I deduct?",
@@ -116,12 +116,12 @@ export default function FreelancerTaxPage() {
 
           <h3 className="text-xl font-semibold text-slate-900 mb-3">2. Federal Income Tax</h3>
           <p className="text-slate-600 leading-relaxed mb-4">
-            On top of self-employment tax, you owe regular federal income tax on your net profit (income minus business expenses). This is calculated using the standard 2024 tax brackets, and you get to subtract the standard deduction first - $14,600 for single filers, $29,200 for married filing jointly.
+            On top of self-employment tax, you owe regular federal income tax on your net profit (income minus business expenses). This is calculated using the standard 2026 tax brackets, and you get to subtract the standard deduction first - $14,600 for single filers, $29,200 for married filing jointly.
           </p>
 
           <h3 className="text-xl font-semibold text-slate-900 mb-3">Quarterly Estimated Tax Payments</h3>
           <p className="text-slate-600 leading-relaxed mb-4">
-            If you expect to owe $1,000 or more in taxes for the year, the IRS requires you to make quarterly estimated payments. The 2024 due dates are April 15, June 17, September 16, and January 15, 2025. Missing these payments can result in an underpayment penalty even if you pay everything by April 15.
+            If you expect to owe $1,000 or more in taxes for the year, the IRS requires you to make quarterly estimated payments. The 2026 due dates are April 15, June 15, September 15, and January 15, 2027. Missing these payments can result in an underpayment penalty even if you pay everything by April 15.
           </p>
           <p className="text-slate-600 leading-relaxed mb-6">
             Use the quarterly payment figure from this calculator as a guide. Set aside that amount in a separate savings account every quarter so you are never caught short.
