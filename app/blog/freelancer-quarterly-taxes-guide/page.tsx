@@ -25,13 +25,29 @@ const breadcrumbJsonLd = {
 };
 
 export const metadata: Metadata = {
-  title: "The Complete Guide to Quarterly Estimated Taxes for Freelancers",
+  title: "The Complete Guide to Quarterly Estimated Taxes for Freelancers (2026)",
   description:
-    "Everything a 1099 contractor needs to know about self-employment tax, quarterly payment due dates, safe harbor rules, and how to avoid IRS penalties.",
-  keywords: ["quarterly estimated tax freelancer", "self employment tax guide", "1099 taxes explained", "freelancer tax tips"],
+    "Everything a 1099 contractor needs to know about self-employment tax, quarterly payment due dates, safe harbor rules, and how to avoid IRS penalties in 2026.",
+  keywords: [
+    "quarterly estimated tax freelancer",
+    "self employment tax guide",
+    "1099 taxes explained",
+    "freelancer tax tips",
+    "quarterly tax payments 2026",
+    "IRS estimated tax 2026",
+    "self employed quarterly tax guide",
+    "1099 contractor tax guide",
+    "how to pay quarterly taxes freelancer",
+    "freelancer tax set aside percentage",
+    "safe harbor rule estimated taxes",
+    "self employment tax deductions",
+  ],
+  alternates: {
+    canonical: "https://quickfinance.tools/blog/freelancer-quarterly-taxes-guide",
+  },
   openGraph: {
-    title: "The Complete Guide to Quarterly Estimated Taxes for Freelancers",
-    description: "A complete walkthrough of how quarterly taxes work for freelancers and independent contractors.",
+    title: "The Complete Guide to Quarterly Estimated Taxes for Freelancers (2026)",
+    description: "A complete walkthrough of how quarterly taxes work for US freelancers and independent contractors. Due dates, safe harbor rules, deductions.",
   },
 };
 

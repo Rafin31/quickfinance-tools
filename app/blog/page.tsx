@@ -2,8 +2,23 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Personal Finance Blog - QuickFinance Tools",
-  description: "Practical personal finance guides for freelancers, gig workers, and independent earners. Taxes, debt payoff, savings, and more.",
+  title: "Personal Finance Blog – Freelancer Tax, Debt & Savings Guides",
+  description: "Practical personal finance guides for freelancers, gig workers, and independent earners in the US, UK, and Canada. Taxes, debt payoff, emergency fund, and savings guides.",
+  keywords: [
+    "freelancer personal finance blog",
+    "self employed tax guide",
+    "debt payoff guide",
+    "emergency fund guide for freelancers",
+    "1099 tax guide",
+    "quarterly estimated tax guide",
+    "debt snowball vs avalanche guide",
+    "personal finance for gig workers",
+    "freelancer finance tips UK",
+    "self employed money tips Canada",
+  ],
+  alternates: {
+    canonical: "https://quickfinance.tools/blog",
+  },
 };
 
 const posts = [

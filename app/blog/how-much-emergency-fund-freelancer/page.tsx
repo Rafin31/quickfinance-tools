@@ -27,8 +27,23 @@ const breadcrumbJsonLd = {
 export const metadata: Metadata = {
   title: "How Much Emergency Fund Does a Freelancer Actually Need?",
   description:
-    "The standard 3-6 month emergency fund advice was designed for salaried workers. Here is how to calculate the right emergency fund size when your income is variable.",
-  keywords: ["emergency fund freelancer", "how much emergency fund self employed", "emergency savings variable income", "freelancer emergency fund"],
+    "The 3-6 month emergency fund rule was designed for salaried workers. Here is how to calculate the right target when your income is variable — in the US, UK, and Canada.",
+  keywords: [
+    "emergency fund freelancer",
+    "how much emergency fund self employed",
+    "emergency savings variable income",
+    "freelancer emergency fund",
+    "emergency fund for gig workers",
+    "self employed emergency fund UK",
+    "freelancer emergency savings Canada",
+    "how much emergency fund do I need",
+    "variable income emergency fund size",
+    "emergency fund 3 6 months rule freelancer",
+    "self employed financial safety net",
+  ],
+  alternates: {
+    canonical: "https://quickfinance.tools/blog/how-much-emergency-fund-freelancer",
+  },
 };
 
 export default function FreelancerEmergencyFundPage() {

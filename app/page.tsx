@@ -4,7 +4,47 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "QuickFinance Tools – Free Personal Finance Calculators for Freelancers & Gig Workers",
   description:
-    "Free personal finance calculators: freelancer tax estimator, debt snowball & avalanche, emergency fund, compound interest, and savings goal planner. No sign-up. Instant results.",
+    "Free personal finance calculators for freelancers, gig workers, and independent earners in the US, UK, and Canada. Freelancer tax, debt payoff, compound interest, emergency fund. No sign-up.",
+  keywords: [
+    // High-volume US
+    "freelancer tax calculator",
+    "debt snowball calculator",
+    "compound interest calculator",
+    "emergency fund calculator",
+    "savings goal calculator",
+    "1099 tax calculator",
+    "self employment tax calculator",
+    "debt avalanche calculator",
+    "quarterly estimated tax calculator",
+    "debt payoff calculator",
+    // UK
+    "self employed tax calculator UK",
+    "compound interest calculator UK",
+    "savings calculator UK",
+    "debt payoff calculator UK",
+    "emergency fund calculator UK",
+    // Canada
+    "compound interest calculator Canada",
+    "self employed tax calculator Canada",
+    "savings calculator Canada",
+    "TFSA compound interest calculator",
+    // Long-tail
+    "how much emergency fund should I have",
+    "debt snowball vs avalanche calculator",
+    "compound interest with monthly contributions",
+    "how much to save per month calculator",
+    "freelance quarterly tax estimate",
+    "free financial calculators online",
+  ],
+  alternates: {
+    canonical: "https://quickfinance.tools",
+    languages: {
+      "en-US": "https://quickfinance.tools",
+      "en-GB": "https://quickfinance.tools",
+      "en-CA": "https://quickfinance.tools",
+      "x-default": "https://quickfinance.tools",
+    },
+  },
 };
 
 const calculators = [
@@ -76,7 +116,7 @@ export default function Home() {
             <span className="text-emerald-400">real life</span>
           </h1>
           <p className="animate-fade-up delay-150 text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Whether you freelance, drive for apps, or just want to know when you can retire - get clear numbers without the jargon.
+            Whether you freelance, drive for apps, or just want to know when you can retire — get clear numbers without the jargon. Free for US, UK, and Canadian users.
           </p>
           <div className="animate-fade-up delay-225 flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -152,7 +192,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-slate-900 mb-3">Why QuickFinance Tools?</h2>
-            <p className="text-slate-500">Built for the 59 million Americans who freelance, side hustle, or just want clearer money answers.</p>
+            <p className="text-slate-500">Built for the tens of millions of freelancers and independent earners in the US, UK, and Canada who want clearer answers about their money.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
@@ -169,9 +209,9 @@ export default function Home() {
                 delay: "delay-150",
               },
               {
-                icon: "🎯",
-                title: "Built for gig workers",
-                desc: "Most calculator sites were built for W-2 employees. We cover freelancers, 1099s, and side hustlers too.",
+                icon: "🌍",
+                title: "Built for independent earners",
+                desc: "Most calculator sites were built for salaried employees (W-2, PAYE, T4). We cover freelancers, 1099s, sole traders, and contractors in the US, UK, and Canada.",
                 delay: "delay-300",
               },
             ].map((f) => (
@@ -197,7 +237,7 @@ export default function Home() {
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-2xl font-bold text-slate-900 mb-3">Start with the most popular calculator</h2>
           <p className="text-slate-500 mb-8">
-            The freelancer tax calculator is the most-used tool on this site. If you earn income outside a W-2, start here.
+            The freelancer tax calculator is the most-used tool on this site. If you earn income outside a regular paycheck — W-2, PAYE, or T4 — start here.
           </p>
           <Link
             href="/calculators/freelancer-tax"

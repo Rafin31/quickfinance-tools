@@ -5,8 +5,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Savings Goal Calculator – Monthly Amount & Timeline Planner (Free)",
   description:
-    "Free savings goal calculator. Find how much to save per month to hit any goal by a deadline, or see when you'll reach your target with a set monthly amount.",
+    "Free savings goal calculator. Find how much to save monthly to hit any goal by a deadline. Currency-neutral — works for USD, GBP, CAD savers. ISA and TFSA compatible.",
   keywords: [
+    // US core
     "savings goal calculator",
     "how much to save per month calculator",
     "savings calculator",
@@ -15,6 +16,25 @@ export const metadata: Metadata = {
     "how long to save money calculator",
     "savings plan calculator",
     "goal savings calculator with interest",
+    "savings goal planner",
+    "how long until I reach my savings goal",
+    // UK
+    "savings goal calculator UK",
+    "savings calculator UK",
+    "how much to save per month UK",
+    "monthly savings planner UK",
+    "savings target calculator UK",
+    "ISA savings goal calculator",
+    // Canada
+    "savings goal calculator Canada",
+    "savings calculator Canada",
+    "monthly savings calculator Canada",
+    "TFSA savings goal calculator",
+    // Long-tail
+    "save for down payment calculator",
+    "save for vacation calculator",
+    "save for emergency fund calculator",
+    "savings goal with interest calculator",
   ],
   openGraph: {
     title: "Savings Goal Calculator – Monthly Amount & Timeline Planner (Free)",
@@ -38,7 +58,8 @@ const faqs = [
   { q: "What counts as a savings goal?", a: "Common savings goals include: emergency fund, vacation, car down payment, home down payment, wedding, new device or equipment, tax payments (for freelancers), or a business investment. Use this calculator for any fixed-amount target with a timeline." },
   { q: "What if I miss a month of contributions?", a: "Missing one month pushes your target date back slightly or means you need to increase contributions later. The calculator assumes consistent monthly contributions. In practice, build in a small buffer and consider automating transfers so you do not have to remember." },
   { q: "How is this different from the compound interest calculator?", a: "The savings goal calculator is for short-to-medium-term goals with a fixed target amount. The compound interest calculator is better for long-term wealth building where you want to see how a sum grows indefinitely. Use savings goal for 'I want $20,000 in 3 years.' Use compound interest for 'What will my investments be worth in 30 years?'" },
-  { q: "Where should I keep money I am saving toward a goal?", a: "For goals under 1 year, a high-yield savings account is perfect. For 1-3 year goals, consider a high-yield savings account or short-term CDs. For goals over 3 years where you can tolerate some risk, a brokerage account with conservative allocations might make sense." },
+  { q: "Where should I keep money I am saving toward a goal?", a: "For goals under 1 year, a high-yield savings account is perfect. For 1-3 year goals, consider a high-yield savings account or short-term CDs (US), fixed-rate Cash ISAs (UK), or GICs (Canada). For goals over 3 years where you can tolerate some risk, a brokerage account with conservative allocations might make sense." },
+  { q: "Does this savings calculator work for UK and Canadian savers?", a: "Yes. This is a completely currency-neutral tool. Whether you are saving in GBP, CAD, AUD, EUR, or USD, enter your goal amount and monthly savings in your local currency — the math works identically. For UK savers using a Cash ISA or high-yield savings account, current rates sit around 4–5% as of 2026. For Canadian savers using a HISA or TFSA, current rates are 3–5%. Since ISA and TFSA returns are tax-free, the rate you enter is your effective after-tax rate — no adjustment needed." },
 ];
 
 const faqJsonLd = {

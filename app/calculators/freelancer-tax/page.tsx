@@ -5,8 +5,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Freelancer Tax Calculator – Free 1099 & Self-Employment Tax Estimator",
   description:
-    "Free freelancer tax calculator. Estimate self-employment tax (15.3%), federal income tax, and quarterly payments for 1099 contractors. Instant, no sign-up.",
+    "Free freelancer tax calculator for US 1099 workers. Estimate self-employment tax (15.3%), federal income tax, and quarterly estimated payments. Instant, no sign-up. UK and Canada notes included.",
   keywords: [
+    // US core
     "freelancer tax calculator",
     "1099 tax calculator",
     "self employment tax calculator",
@@ -15,6 +16,22 @@ export const metadata: Metadata = {
     "self employed tax calculator 2026",
     "how much tax do freelancers pay",
     "1099 quarterly tax estimator",
+    "side hustle tax calculator",
+    "freelance income tax estimator",
+    // UK
+    "self employed tax calculator UK",
+    "sole trader tax calculator UK",
+    "freelancer tax calculator UK",
+    "HMRC self assessment calculator",
+    "self employed national insurance calculator UK",
+    // Canada
+    "freelancer tax calculator Canada",
+    "self employed tax calculator Canada",
+    "self employment income tax Canada",
+    "CPP self employment calculator",
+    // Long-tail
+    "how much should I set aside for taxes freelancer",
+    "quarterly tax payment calculator 1099",
   ],
   openGraph: {
     title: "Freelancer Tax Calculator – Free 1099 & Self-Employment Tax Estimator",
@@ -59,6 +76,14 @@ const faqs = [
   {
     q: "How much should I set aside from each payment?",
     a: "A safe rule of thumb is 25-30% of each payment you receive. This typically covers federal income tax plus self-employment tax for most freelancers earning under $100,000. Use this calculator for a more precise estimate based on your actual situation.",
+  },
+  {
+    q: "Does this freelancer tax calculator work for UK self-employed workers or sole traders?",
+    a: "This calculator estimates US federal taxes only. UK self-employed workers and sole traders pay Income Tax through HMRC Self Assessment (annual return due January 31) and Class 2 and Class 4 National Insurance contributions. UK tax rates and allowances differ significantly — notably, the UK Personal Allowance (£12,570 as of 2026) works differently from the US standard deduction. That said, the general principle of setting aside 25–30% of each payment is a reasonable rule of thumb for UK freelancers too, pending a more precise estimate from an accountant.",
+  },
+  {
+    q: "Can Canadian freelancers use this tax calculator?",
+    a: "This tool calculates US federal taxes only. Canadian self-employed workers pay federal and provincial income tax on net business income, plus CPP (Canada Pension Plan) contributions of 11.9% on net self-employment earnings. Canadian freelancers file a T2125 (Statement of Business Activities) with their T1 personal return. The annual filing deadline is June 15 for self-employed individuals, though any balance owing is due April 30. As in the US, setting aside 25–30% of gross client payments is a practical starting point for Canadian freelancers.",
   },
 ];
 

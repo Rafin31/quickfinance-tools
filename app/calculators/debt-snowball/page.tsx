@@ -5,8 +5,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Debt Snowball Calculator – Free Debt Payoff Planner (Snowball & Avalanche)",
   description:
-    "Free debt snowball calculator. Compare snowball vs avalanche payoff, see your exact debt-free date, and total interest saved. Works with any number of debts.",
+    "Free debt snowball calculator. Compare snowball vs avalanche, see your exact debt-free date, and total interest saved. Works in USD, GBP, CAD, and any currency.",
   keywords: [
+    // US core
     "debt snowball calculator",
     "debt avalanche calculator",
     "debt payoff calculator",
@@ -15,6 +16,23 @@ export const metadata: Metadata = {
     "debt snowball vs avalanche calculator",
     "debt payoff planner",
     "credit card payoff calculator",
+    "get out of debt calculator",
+    "debt elimination calculator",
+    // UK
+    "debt payoff calculator UK",
+    "credit card payoff calculator UK",
+    "debt snowball calculator UK",
+    "debt free calculator UK",
+    "debt avalanche calculator UK",
+    // Canada
+    "debt payoff calculator Canada",
+    "credit card payoff calculator Canada",
+    "debt snowball calculator Canada",
+    "debt free calculator Canada",
+    // Long-tail
+    "how much extra to pay on debt calculator",
+    "debt repayment calculator with extra payments",
+    "pay off multiple debts calculator",
   ],
   openGraph: {
     title: "Debt Snowball Calculator – Free Debt Payoff Planner (Snowball & Avalanche)",
@@ -53,6 +71,10 @@ const faqs = [
   {
     q: "Should I pay off debt or invest?",
     a: "If your debt carries an interest rate higher than 7-8%, paying it off typically beats investing. If it is lower (like a mortgage at 3-4%), you may come out ahead investing instead. High-interest credit card debt should almost always be paid first.",
+  },
+  {
+    q: "Does this debt payoff calculator work for UK or Canadian debt?",
+    a: "Yes. The snowball and avalanche strategies are completely currency-agnostic — the math is identical whether you are repaying debt in USD, GBP, CAD, AUD, or any other currency. Enter your debt balances and interest rates in your local currency and the payoff schedule works exactly the same. UK credit card APRs typically run 20–30%; Canadian credit card rates generally sit at 19.99–24.99%. Both are high enough to make aggressive payoff a priority over most other financial goals.",
   },
 ];
 

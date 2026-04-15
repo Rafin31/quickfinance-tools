@@ -5,8 +5,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Compound Interest Calculator – Monthly Contributions & Year-by-Year Growth",
   description:
-    "Free compound interest calculator with monthly contributions. See your investment grow year by year with a visual chart. Perfect for retirement and savings planning.",
+    "Free compound interest calculator with monthly contributions. See year-by-year investment growth with a visual chart. Works for ISA (UK), TFSA (Canada), and US retirement accounts.",
   keywords: [
+    // US core
     "compound interest calculator",
     "compound interest calculator with monthly contributions",
     "investment growth calculator",
@@ -15,6 +16,25 @@ export const metadata: Metadata = {
     "investment calculator",
     "how much will my investment grow",
     "compound interest over 30 years",
+    "savings compound interest calculator",
+    // UK
+    "compound interest calculator UK",
+    "ISA compound interest calculator",
+    "stocks and shares ISA calculator",
+    "cash ISA interest calculator",
+    "investment growth calculator UK",
+    "savings calculator UK",
+    // Canada
+    "compound interest calculator Canada",
+    "TFSA compound interest calculator",
+    "RRSP compound interest calculator",
+    "investment calculator Canada",
+    "TFSA growth calculator",
+    // Long-tail
+    "compound interest daily calculator",
+    "how long to double money calculator",
+    "rule of 72 calculator",
+    "monthly investment calculator",
   ],
   openGraph: {
     title: "Compound Interest Calculator – Monthly Contributions & Year-by-Year Growth",
@@ -39,6 +59,8 @@ const faqs = [
   { q: "What interest rate should I use?", a: "For the S&P 500, the historical average is around 10% nominal or 7% inflation-adjusted. For a high-yield savings account, use current rates (4-5% as of 2026). For bonds, 3-4% is reasonable. Be conservative in your projections - it is better to be pleasantly surprised than to count on aggressive returns." },
   { q: "Why does monthly contribution matter so much?", a: "Monthly contributions dramatically accelerate growth, especially over long time periods. This is because you are not just adding money - you are adding money that then also compounds. Try doubling the monthly contribution in the calculator and watch the final balance change. The impact is non-linear." },
   { q: "Does this account for inflation?", a: "No. Use an inflation-adjusted rate (typically 2-3% below the nominal rate) if you want to see your results in today's purchasing power. For a historically average S&P 500 return of 10%, use 7% to account for ~3% inflation." },
+  { q: "Can UK users model their ISA with this calculator?", a: "Yes. The compound interest math is identical regardless of account type or currency. For a Stocks and Shares ISA, a reasonable long-term rate is 6–8% annually (after platform fees). For a Cash ISA, use current market rates (around 4–5% as of 2026). Since ISA returns are completely tax-free, no rate adjustment is needed — what you see is what you keep. Enter your monthly contribution in GBP and the results will be in the same currency." },
+  { q: "Can Canadian users model their TFSA with this calculator?", a: "Yes. The TFSA (Tax-Free Savings Account) is Canada's equivalent of the UK ISA — returns grow completely tax-free. The 2026 TFSA annual contribution limit is $7,000 CAD (roughly $583/month). Enter your expected monthly TFSA contribution and your investment's expected rate of return. For equity-heavy TFSA portfolios, 6–8% is a reasonable long-term estimate; for GIC or HISA-style TFSAs, use current rates of 3–5%. Enter amounts in CAD for CAD results." },
 ];
 
 const faqJsonLd = {

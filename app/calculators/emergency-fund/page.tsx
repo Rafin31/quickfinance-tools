@@ -5,8 +5,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Emergency Fund Calculator – How Much Do I Need? (Personalized)",
   description:
-    "Free emergency fund calculator. Find your exact savings target based on real monthly expenses and income stability. Freelancers, gig workers, and employees.",
+    "Free emergency fund calculator. Find your exact savings target based on real monthly expenses and income stability. Works for US, UK, and Canadian freelancers, gig workers, and employees.",
   keywords: [
+    // US core
     "emergency fund calculator",
     "how much emergency fund should I have",
     "emergency savings calculator",
@@ -15,6 +16,23 @@ export const metadata: Metadata = {
     "how much to save for emergency fund",
     "emergency fund size calculator",
     "6 months emergency fund calculator",
+    "how much should I have in emergency fund",
+    "emergency fund calculator by expenses",
+    // UK
+    "emergency fund calculator UK",
+    "emergency savings calculator UK",
+    "rainy day fund calculator UK",
+    "how much emergency savings UK",
+    "emergency fund self employed UK",
+    // Canada
+    "emergency fund calculator Canada",
+    "emergency savings Canada",
+    "how much emergency fund Canada",
+    "emergency fund freelancer Canada",
+    // Long-tail
+    "3 6 months expenses calculator",
+    "emergency fund variable income calculator",
+    "how many months expenses emergency fund",
   ],
   openGraph: {
     title: "Emergency Fund Calculator – How Much Do I Need? (Personalized)",
@@ -38,7 +56,9 @@ const faqs = [
   { q: "Should I count all expenses or just essentials?", a: "Essentials only. Your emergency fund needs to cover housing, food, utilities, transport, insurance, and minimum debt payments - not Netflix or dining out. The goal is to survive a job loss or major unexpected expense, not maintain your full lifestyle." },
   { q: "Where should I keep my emergency fund?", a: "A high-yield savings account (HYSA) is the right call. You want the money accessible immediately but separate from your checking account so you do not accidentally spend it. Current HYSA rates are 4-5% APY, so your money earns something while it waits." },
   { q: "Should I build an emergency fund before paying off debt?", a: "Most financial planners recommend a small starter emergency fund ($1,000-2,000) before aggressively paying debt. Without any buffer, one car repair or medical bill sends you right back into debt. Build a small buffer first, then focus on debt payoff." },
-  { q: "Can I invest my emergency fund for better returns?", a: "No. Emergency funds should not be in stocks or anything with market risk. If the market drops 30% right when you get laid off, you are in a very bad position. Keep it in an FDIC-insured savings account. The peace of mind is worth more than the extra return." },
+  { q: "Can I invest my emergency fund for better returns?", a: "No. Emergency funds should not be in stocks or anything with market risk. If the market drops 30% right when you get laid off, you are in a very bad position. Keep it in an FDIC-insured savings account (US), FSCS-protected account (UK), or CDIC-insured account (Canada). The peace of mind is worth more than the extra return." },
+  { q: "How does emergency fund advice differ for UK residents?", a: "The 3–6 month framework is universal. UK employees on PAYE receive Statutory Sick Pay (£116.75/week as of 2026) for up to 28 weeks during illness, which partially offsets income loss. Self-employed UK residents have no access to SSP, making a larger fund — closer to 6 months — especially important. Universal Credit also provides a safety net, but takes 5 weeks to begin paying. Given this delay, even UK employees benefit from having at least 1–2 months of expenses in liquid savings regardless of any state support they might receive." },
+  { q: "Should Canadian freelancers factor Employment Insurance into their emergency fund calculation?", a: "Partially. Self-employed Canadians can voluntarily opt in to EI (Employment Insurance), but this requires at least 12 months of premium contributions before any claim is possible, and benefits cover only 55% of average insurable earnings for up to 45 weeks. EI is a useful supplement but not a substitute for a liquid emergency fund. Standard advice for Canadian freelancers remains 6 months of essential expenses — EI can serve as a secondary buffer but should not replace dedicated savings, especially before your first year of contributions." },
 ];
 
 const faqJsonLd = {
