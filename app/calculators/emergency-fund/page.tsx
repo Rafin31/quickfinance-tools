@@ -3,12 +3,21 @@ import EmergencyFundCalc from "@/components/calculators/EmergencyFundCalc";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Emergency Fund Calculator - How Much Do You Actually Need?",
+  title: "Emergency Fund Calculator – How Much Do I Need? (Personalized)",
   description:
-    "Calculate your exact emergency fund target based on your real monthly expenses and income stability. See how long to build it. Free, no sign-up.",
-  keywords: ["emergency fund calculator", "how much emergency fund should I have", "emergency savings calculator", "3 months expenses calculator"],
+    "Free emergency fund calculator. Find your exact savings target based on real monthly expenses and income stability. Freelancers, gig workers, and employees.",
+  keywords: [
+    "emergency fund calculator",
+    "how much emergency fund should I have",
+    "emergency savings calculator",
+    "3 months expenses calculator",
+    "emergency fund for freelancers",
+    "how much to save for emergency fund",
+    "emergency fund size calculator",
+    "6 months emergency fund calculator",
+  ],
   openGraph: {
-    title: "Emergency Fund Calculator - How Much Do You Actually Need?",
+    title: "Emergency Fund Calculator – How Much Do I Need? (Personalized)",
     description: "Get your personalized emergency fund target based on your actual expenses and job stability.",
   },
 };
@@ -32,10 +41,32 @@ const faqs = [
   { q: "Can I invest my emergency fund for better returns?", a: "No. Emergency funds should not be in stocks or anything with market risk. If the market drops 30% right when you get laid off, you are in a very bad position. Keep it in an FDIC-insured savings account. The peace of mind is worth more than the extra return." },
 ];
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://quickfinance.tools" },
+    { "@type": "ListItem", position: 2, name: "Calculators", item: "https://quickfinance.tools/#calculators" },
+    { "@type": "ListItem", position: 3, name: "Emergency Fund Calculator", item: "https://quickfinance.tools/calculators/emergency-fund" },
+  ],
+};
+
 export default function EmergencyFundPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <nav className="text-sm text-slate-400 mb-6">
           <Link href="/" className="hover:text-emerald-500">Home</Link>
@@ -85,6 +116,23 @@ export default function EmergencyFundPage() {
               <Link key={c.href} href={c.href} className="flex items-start gap-4 bg-white rounded-xl border border-slate-200 p-4 hover:border-emerald-300 transition-colors">
                 <span className="text-2xl">{c.emoji}</span>
                 <div><p className="font-semibold text-slate-900 text-sm">{c.title}</p><p className="text-xs text-slate-500 mt-0.5">{c.desc}</p></div>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <section className="mt-10">
+          <h2 className="text-xl font-bold text-slate-900 mb-4">Related Articles</h2>
+          <div className="space-y-3">
+            {[
+              { href: "/blog/how-much-emergency-fund-freelancer", tag: "Savings", title: "How Much Emergency Fund Does a Freelancer Actually Need?", desc: "Why the 3-6 month rule undershoots for variable income earners — and the right framework." },
+            ].map((a) => (
+              <Link key={a.href} href={a.href} className="flex items-start gap-4 bg-white rounded-xl border border-slate-200 p-4 hover:border-emerald-300 transition-colors group">
+                <div>
+                  <span className="text-xs font-semibold bg-emerald-50 text-emerald-600 border border-emerald-200 px-2 py-0.5 rounded-full">{a.tag}</span>
+                  <p className="font-semibold text-slate-900 text-sm mt-1.5 group-hover:text-emerald-600 transition-colors">{a.title}</p>
+                  <p className="text-xs text-slate-500 mt-0.5">{a.desc}</p>
+                </div>
               </Link>
             ))}
           </div>

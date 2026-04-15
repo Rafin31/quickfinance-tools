@@ -3,12 +3,21 @@ import SavingsGoalCalc from "@/components/calculators/SavingsGoalCalc";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Savings Goal Calculator - How Much to Save Per Month",
+  title: "Savings Goal Calculator – Monthly Amount & Timeline Planner (Free)",
   description:
-    "Calculate how much to save each month to hit your savings goal by a specific date, or find out when you will reach your goal with a fixed monthly amount.",
-  keywords: ["savings goal calculator", "how much to save per month calculator", "savings calculator", "monthly savings calculator"],
+    "Free savings goal calculator. Find how much to save per month to hit any goal by a deadline, or see when you'll reach your target with a set monthly amount.",
+  keywords: [
+    "savings goal calculator",
+    "how much to save per month calculator",
+    "savings calculator",
+    "monthly savings calculator",
+    "savings target calculator",
+    "how long to save money calculator",
+    "savings plan calculator",
+    "goal savings calculator with interest",
+  ],
   openGraph: {
-    title: "Savings Goal Calculator - How Much to Save Per Month",
+    title: "Savings Goal Calculator – Monthly Amount & Timeline Planner (Free)",
     description: "Enter your goal and deadline, get your exact monthly savings number. Or enter your monthly amount and see when you will hit your goal.",
   },
 };
@@ -32,10 +41,32 @@ const faqs = [
   { q: "Where should I keep money I am saving toward a goal?", a: "For goals under 1 year, a high-yield savings account is perfect. For 1-3 year goals, consider a high-yield savings account or short-term CDs. For goals over 3 years where you can tolerate some risk, a brokerage account with conservative allocations might make sense." },
 ];
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://quickfinance.tools" },
+    { "@type": "ListItem", position: 2, name: "Calculators", item: "https://quickfinance.tools/#calculators" },
+    { "@type": "ListItem", position: 3, name: "Savings Goal Calculator", item: "https://quickfinance.tools/calculators/savings-goal" },
+  ],
+};
+
 export default function SavingsGoalPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <nav className="text-sm text-slate-400 mb-6">
           <Link href="/" className="hover:text-emerald-500">Home</Link>

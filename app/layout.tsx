@@ -12,18 +12,24 @@ const geist = Geist({
 
 export const metadata: Metadata = {
   title: {
-    default: "QuickFinance Tools - Free Personal Finance Calculators",
+    default: "QuickFinance Tools – Free Personal Finance Calculators for Freelancers",
     template: "%s | QuickFinance Tools",
   },
   description:
-    "Free personal finance calculators for freelancers, gig workers, and everyday people. Debt payoff, emergency fund, compound interest, savings goals, and more.",
+    "Free personal finance calculators for freelancers, 1099 contractors, and gig workers. Estimate self-employment tax, debt payoff, emergency fund, compound interest, and savings goals.",
   keywords: [
     "personal finance calculator",
     "freelancer tax calculator",
+    "self employment tax calculator",
+    "1099 tax calculator",
     "debt snowball calculator",
+    "debt payoff calculator",
     "emergency fund calculator",
     "compound interest calculator",
     "savings goal calculator",
+    "free finance tools",
+    "gig worker finance",
+    "quarterly estimated tax calculator",
   ],
   authors: [{ name: "QuickFinance Tools" }],
   creator: "QuickFinance Tools",
@@ -65,6 +71,19 @@ export const metadata: Metadata = {
   },
 };
 
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "QuickFinance Tools",
+  url: "https://quickfinance.tools",
+  description: "Free personal finance calculators for freelancers, 1099 contractors, and gig workers.",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: "https://quickfinance.tools/?q={search_term_string}",
+    "query-input": "required name=search_term_string",
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -73,6 +92,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geist.variable} h-full antialiased`} suppressHydrationWarning>
       <body className="min-h-full flex flex-col bg-slate-50 text-slate-900">
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

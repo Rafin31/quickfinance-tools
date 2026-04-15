@@ -3,18 +3,21 @@ import DebtSnowballCalc from "@/components/calculators/DebtSnowballCalc";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Debt Snowball Calculator - See Your Debt-Free Date",
+  title: "Debt Snowball Calculator – Free Debt Payoff Planner (Snowball & Avalanche)",
   description:
-    "Calculate your debt payoff timeline using the snowball or avalanche method. See exactly when each debt is gone and how much interest you will pay. Free, instant.",
+    "Free debt snowball calculator. Compare snowball vs avalanche payoff, see your exact debt-free date, and total interest saved. Works with any number of debts.",
   keywords: [
     "debt snowball calculator",
     "debt avalanche calculator",
     "debt payoff calculator",
     "how long to pay off debt calculator",
     "debt free date calculator",
+    "debt snowball vs avalanche calculator",
+    "debt payoff planner",
+    "credit card payoff calculator",
   ],
   openGraph: {
-    title: "Debt Snowball Calculator - See Your Debt-Free Date",
+    title: "Debt Snowball Calculator – Free Debt Payoff Planner (Snowball & Avalanche)",
     description: "Compare snowball vs avalanche debt payoff. See your exact debt-free date and total interest paid.",
   },
 };
@@ -53,10 +56,32 @@ const faqs = [
   },
 ];
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://quickfinance.tools" },
+    { "@type": "ListItem", position: 2, name: "Calculators", item: "https://quickfinance.tools/#calculators" },
+    { "@type": "ListItem", position: 3, name: "Debt Snowball Calculator", item: "https://quickfinance.tools/calculators/debt-snowball" },
+  ],
+};
+
 export default function DebtSnowballPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <nav className="text-sm text-slate-400 mb-6">
@@ -135,6 +160,23 @@ export default function DebtSnowballPage() {
                 <div>
                   <p className="font-semibold text-slate-900 text-sm">{c.title}</p>
                   <p className="text-xs text-slate-500 mt-0.5">{c.desc}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <section className="mt-10">
+          <h2 className="text-xl font-bold text-slate-900 mb-4">Related Articles</h2>
+          <div className="space-y-3">
+            {[
+              { href: "/blog/debt-snowball-vs-avalanche", tag: "Debt", title: "Debt Snowball vs Avalanche: Which Method Actually Works?", desc: "The math says avalanche. The research says snowball. Here is how to decide." },
+            ].map((a) => (
+              <Link key={a.href} href={a.href} className="flex items-start gap-4 bg-white rounded-xl border border-slate-200 p-4 hover:border-emerald-300 transition-colors group">
+                <div>
+                  <span className="text-xs font-semibold bg-emerald-50 text-emerald-600 border border-emerald-200 px-2 py-0.5 rounded-full">{a.tag}</span>
+                  <p className="font-semibold text-slate-900 text-sm mt-1.5 group-hover:text-emerald-600 transition-colors">{a.title}</p>
+                  <p className="text-xs text-slate-500 mt-0.5">{a.desc}</p>
                 </div>
               </Link>
             ))}

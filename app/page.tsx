@@ -2,9 +2,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "QuickFinance Tools - Free Personal Finance Calculators",
+  title: "QuickFinance Tools – Free Personal Finance Calculators for Freelancers & Gig Workers",
   description:
-    "Free personal finance calculators for freelancers, gig workers, and everyday people. Debt payoff, emergency fund, compound interest, FIRE number, savings goals, and more.",
+    "Free personal finance calculators: freelancer tax estimator, debt snowball & avalanche, emergency fund, compound interest, and savings goal planner. No sign-up. Instant results.",
 };
 
 const calculators = [

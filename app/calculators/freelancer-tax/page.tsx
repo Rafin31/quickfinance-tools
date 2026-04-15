@@ -3,18 +3,21 @@ import FreelancerTaxCalc from "@/components/calculators/FreelancerTaxCalc";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Freelancer Tax Calculator - Estimate Your 1099 Quarterly Taxes",
+  title: "Freelancer Tax Calculator – Free 1099 & Self-Employment Tax Estimator",
   description:
-    "Calculate your self-employment tax, federal income tax, and quarterly estimated payments as a freelancer or 1099 contractor. Free, instant, no sign-up.",
+    "Free freelancer tax calculator. Estimate self-employment tax (15.3%), federal income tax, and quarterly payments for 1099 contractors. Instant, no sign-up.",
   keywords: [
     "freelancer tax calculator",
     "1099 tax calculator",
     "self employment tax calculator",
     "quarterly estimated tax calculator",
     "independent contractor tax calculator",
+    "self employed tax calculator 2026",
+    "how much tax do freelancers pay",
+    "1099 quarterly tax estimator",
   ],
   openGraph: {
-    title: "Freelancer Tax Calculator - Estimate Your 1099 Quarterly Taxes",
+    title: "Freelancer Tax Calculator – Free 1099 & Self-Employment Tax Estimator",
     description:
       "Know exactly what you owe in self-employment tax and quarterly payments. Built for freelancers and 1099 contractors.",
   },
@@ -59,13 +62,32 @@ const faqs = [
   },
 ];
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://quickfinance.tools" },
+    { "@type": "ListItem", position: 2, name: "Calculators", item: "https://quickfinance.tools/#calculators" },
+    { "@type": "ListItem", position: 3, name: "Freelancer Tax Calculator", item: "https://quickfinance.tools/calculators/freelancer-tax" },
+  ],
+};
+
 export default function FreelancerTaxPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         {/* Breadcrumb */}
@@ -170,6 +192,24 @@ export default function FreelancerTaxPage() {
                 <div>
                   <p className="font-semibold text-slate-900 text-sm">{c.title}</p>
                   <p className="text-xs text-slate-500 mt-0.5">{c.desc}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        {/* Related articles */}
+        <section className="mt-10">
+          <h2 className="text-xl font-bold text-slate-900 mb-4">Related Articles</h2>
+          <div className="space-y-3">
+            {[
+              { href: "/blog/freelancer-quarterly-taxes-guide", tag: "Taxes", title: "The Complete Guide to Quarterly Estimated Taxes for Freelancers", desc: "Safe harbor rules, due dates, IRS payment methods, and a practical set-aside system." },
+            ].map((a) => (
+              <Link key={a.href} href={a.href} className="flex items-start gap-4 bg-white rounded-xl border border-slate-200 p-4 hover:border-emerald-300 transition-colors group">
+                <div>
+                  <span className="text-xs font-semibold bg-emerald-50 text-emerald-600 border border-emerald-200 px-2 py-0.5 rounded-full">{a.tag}</span>
+                  <p className="font-semibold text-slate-900 text-sm mt-1.5 group-hover:text-emerald-600 transition-colors">{a.title}</p>
+                  <p className="text-xs text-slate-500 mt-0.5">{a.desc}</p>
                 </div>
               </Link>
             ))}

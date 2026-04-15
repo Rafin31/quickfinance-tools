@@ -1,6 +1,29 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "How Much Emergency Fund Does a Freelancer Actually Need?",
+  description: "The standard 3-6 month emergency fund advice was designed for salaried workers. Here is how to calculate the right emergency fund size when your income is variable.",
+  datePublished: "2026-04-05",
+  dateModified: "2026-04-05",
+  author: { "@type": "Organization", name: "QuickFinance Tools", url: "https://quickfinance.tools" },
+  publisher: { "@type": "Organization", name: "QuickFinance Tools", url: "https://quickfinance.tools" },
+  url: "https://quickfinance.tools/blog/how-much-emergency-fund-freelancer",
+  mainEntityOfPage: "https://quickfinance.tools/blog/how-much-emergency-fund-freelancer",
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://quickfinance.tools" },
+    { "@type": "ListItem", position: 2, name: "Blog", item: "https://quickfinance.tools/blog" },
+    { "@type": "ListItem", position: 3, name: "Emergency Fund for Freelancers", item: "https://quickfinance.tools/blog/how-much-emergency-fund-freelancer" },
+  ],
+};
+
 export const metadata: Metadata = {
   title: "How Much Emergency Fund Does a Freelancer Actually Need?",
   description:
@@ -10,6 +33,9 @@ export const metadata: Metadata = {
 
 export default function FreelancerEmergencyFundPage() {
   return (
+    <>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
     <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <nav className="text-sm text-slate-400 mb-8">
         <Link href="/" className="hover:text-emerald-500">Home</Link>
@@ -123,6 +149,22 @@ export default function FreelancerEmergencyFundPage() {
           Open Emergency Fund Calculator
         </Link>
       </div>
+
+      <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        {[
+          { href: "/calculators/savings-goal", emoji: "🎯", title: "Savings Goal Calculator", desc: "Plan monthly contributions to reach your fund target" },
+          { href: "/calculators/freelancer-tax", emoji: "🧾", title: "Freelancer Tax Calculator", desc: "Know your tax bill so your fund covers the right amount" },
+        ].map((c) => (
+          <Link key={c.href} href={c.href} className="flex items-start gap-3 bg-white rounded-xl border border-slate-200 p-4 hover:border-emerald-300 transition-colors">
+            <span className="text-xl">{c.emoji}</span>
+            <div>
+              <p className="font-semibold text-slate-900 text-sm">{c.title}</p>
+              <p className="text-xs text-slate-500 mt-0.5">{c.desc}</p>
+            </div>
+          </Link>
+        ))}
+      </div>
     </div>
+    </>
   );
 }

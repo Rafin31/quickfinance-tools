@@ -1,6 +1,29 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Debt Snowball vs Avalanche: Which Method Actually Works?",
+  description: "A data-driven comparison of the snowball and avalanche debt payoff methods. Learn when each works best, what the research says, and how to pick the right strategy.",
+  datePublished: "2026-04-08",
+  dateModified: "2026-04-08",
+  author: { "@type": "Organization", name: "QuickFinance Tools", url: "https://quickfinance.tools" },
+  publisher: { "@type": "Organization", name: "QuickFinance Tools", url: "https://quickfinance.tools" },
+  url: "https://quickfinance.tools/blog/debt-snowball-vs-avalanche",
+  mainEntityOfPage: "https://quickfinance.tools/blog/debt-snowball-vs-avalanche",
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://quickfinance.tools" },
+    { "@type": "ListItem", position: 2, name: "Blog", item: "https://quickfinance.tools/blog" },
+    { "@type": "ListItem", position: 3, name: "Debt Snowball vs Avalanche", item: "https://quickfinance.tools/blog/debt-snowball-vs-avalanche" },
+  ],
+};
+
 export const metadata: Metadata = {
   title: "Debt Snowball vs Avalanche: Which Method Actually Works?",
   description:
@@ -10,6 +33,9 @@ export const metadata: Metadata = {
 
 export default function DebtSnowballAvalanchePage() {
   return (
+    <>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
     <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <nav className="text-sm text-slate-400 mb-8">
         <Link href="/" className="hover:text-emerald-500">Home</Link>
@@ -120,6 +146,22 @@ export default function DebtSnowballAvalanchePage() {
           Open Debt Calculator
         </Link>
       </div>
+
+      <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        {[
+          { href: "/calculators/emergency-fund", emoji: "🛡️", title: "Emergency Fund Calculator", desc: "Build a safety net before attacking debt" },
+          { href: "/calculators/savings-goal", emoji: "🎯", title: "Savings Goal Calculator", desc: "Plan your financial life after becoming debt-free" },
+        ].map((c) => (
+          <Link key={c.href} href={c.href} className="flex items-start gap-3 bg-white rounded-xl border border-slate-200 p-4 hover:border-emerald-300 transition-colors">
+            <span className="text-xl">{c.emoji}</span>
+            <div>
+              <p className="font-semibold text-slate-900 text-sm">{c.title}</p>
+              <p className="text-xs text-slate-500 mt-0.5">{c.desc}</p>
+            </div>
+          </Link>
+        ))}
+      </div>
     </div>
+    </>
   );
 }

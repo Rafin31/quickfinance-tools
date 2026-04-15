@@ -3,12 +3,21 @@ import CompoundInterestCalc from "@/components/calculators/CompoundInterestCalc"
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Compound Interest Calculator with Monthly Contributions",
+  title: "Compound Interest Calculator – Monthly Contributions & Year-by-Year Growth",
   description:
-    "See how your investments grow over time with compound interest and regular monthly contributions. Visualize the power of long-term investing. Free calculator.",
-  keywords: ["compound interest calculator", "compound interest calculator with monthly contributions", "investment growth calculator", "compound interest monthly deposits"],
+    "Free compound interest calculator with monthly contributions. See your investment grow year by year with a visual chart. Perfect for retirement and savings planning.",
+  keywords: [
+    "compound interest calculator",
+    "compound interest calculator with monthly contributions",
+    "investment growth calculator",
+    "compound interest monthly deposits",
+    "compound interest calculator with monthly deposits",
+    "investment calculator",
+    "how much will my investment grow",
+    "compound interest over 30 years",
+  ],
   openGraph: {
-    title: "Compound Interest Calculator with Monthly Contributions",
+    title: "Compound Interest Calculator – Monthly Contributions & Year-by-Year Growth",
     description: "See exactly how compound interest grows your money over time with monthly contributions. Visual growth chart included.",
   },
 };
@@ -32,10 +41,32 @@ const faqs = [
   { q: "Does this account for inflation?", a: "No. Use an inflation-adjusted rate (typically 2-3% below the nominal rate) if you want to see your results in today's purchasing power. For a historically average S&P 500 return of 10%, use 7% to account for ~3% inflation." },
 ];
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://quickfinance.tools" },
+    { "@type": "ListItem", position: 2, name: "Calculators", item: "https://quickfinance.tools/#calculators" },
+    { "@type": "ListItem", position: 3, name: "Compound Interest Calculator", item: "https://quickfinance.tools/calculators/compound-interest" },
+  ],
+};
+
 export default function CompoundInterestPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <nav className="text-sm text-slate-400 mb-6">
           <Link href="/" className="hover:text-emerald-500">Home</Link>

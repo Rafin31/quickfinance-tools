@@ -1,6 +1,29 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "The Complete Guide to Quarterly Estimated Taxes for Freelancers",
+  description: "Everything a 1099 contractor needs to know about self-employment tax, quarterly payment due dates, safe harbor rules, and how to avoid IRS penalties.",
+  datePublished: "2026-04-10",
+  dateModified: "2026-04-10",
+  author: { "@type": "Organization", name: "QuickFinance Tools", url: "https://quickfinance.tools" },
+  publisher: { "@type": "Organization", name: "QuickFinance Tools", url: "https://quickfinance.tools" },
+  url: "https://quickfinance.tools/blog/freelancer-quarterly-taxes-guide",
+  mainEntityOfPage: "https://quickfinance.tools/blog/freelancer-quarterly-taxes-guide",
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://quickfinance.tools" },
+    { "@type": "ListItem", position: 2, name: "Blog", item: "https://quickfinance.tools/blog" },
+    { "@type": "ListItem", position: 3, name: "Quarterly Taxes Guide", item: "https://quickfinance.tools/blog/freelancer-quarterly-taxes-guide" },
+  ],
+};
+
 export const metadata: Metadata = {
   title: "The Complete Guide to Quarterly Estimated Taxes for Freelancers",
   description:
@@ -14,6 +37,9 @@ export const metadata: Metadata = {
 
 export default function FreelancerTaxGuidePage() {
   return (
+    <>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
     <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <nav className="text-sm text-slate-400 mb-8">
         <Link href="/" className="hover:text-emerald-500">Home</Link>
@@ -140,6 +166,22 @@ export default function FreelancerTaxGuidePage() {
           Open Tax Calculator
         </Link>
       </div>
+
+      <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        {[
+          { href: "/calculators/emergency-fund", emoji: "🛡️", title: "Emergency Fund Calculator", desc: "Build a tax buffer for slow freelance months" },
+          { href: "/calculators/savings-goal", emoji: "🎯", title: "Savings Goal Calculator", desc: "Plan your quarterly tax set-aside as a goal" },
+        ].map((c) => (
+          <Link key={c.href} href={c.href} className="flex items-start gap-3 bg-white rounded-xl border border-slate-200 p-4 hover:border-emerald-300 transition-colors">
+            <span className="text-xl">{c.emoji}</span>
+            <div>
+              <p className="font-semibold text-slate-900 text-sm">{c.title}</p>
+              <p className="text-xs text-slate-500 mt-0.5">{c.desc}</p>
+            </div>
+          </Link>
+        ))}
+      </div>
     </div>
+    </>
   );
 }
