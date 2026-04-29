@@ -71,12 +71,56 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    // New blog articles
+    {
+      url: `${BASE_URL}/blog/compound-interest-monthly-contributions`,
+      lastModified: new Date("2026-04-29"),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${BASE_URL}/blog/savings-goal-calculator-guide`,
+      lastModified: new Date("2026-04-29"),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${BASE_URL}/blog/self-employment-tax-deduction-guide`,
+      lastModified: new Date("2026-05-06"),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${BASE_URL}/blog/fire-number-calculator-guide`,
+      lastModified: new Date("2026-05-13"),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${BASE_URL}/blog/gig-worker-budget-guide`,
+      lastModified: new Date("2026-05-20"),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
     // Static pages
     {
       url: `${BASE_URL}/about`,
       lastModified: CALC_UPDATED,
       changeFrequency: "monthly",
       priority: 0.5,
+    },
+    // Legal pages
+    {
+      url: `${BASE_URL}/privacy-policy`,
+      lastModified: new Date("2026-04-29"),
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
+    {
+      url: `${BASE_URL}/terms`,
+      lastModified: new Date("2026-04-29"),
+      changeFrequency: "yearly",
+      priority: 0.3,
     },
   ];
 }

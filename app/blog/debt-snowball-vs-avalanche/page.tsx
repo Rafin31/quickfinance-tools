@@ -151,7 +151,8 @@ export default function DebtSnowballAvalanchePage() {
         <section>
           <h2 className="text-2xl font-bold text-slate-900 mb-4">The Most Important Variable: Extra Payment Size</h2>
           <p className="leading-relaxed mb-4">Here is what both camps underemphasize: the difference between snowball and avalanche is much smaller than the difference between paying $0 extra per month and $200 extra per month.</p>
-          <p className="leading-relaxed">Increasing your extra payment from $100 to $300/month typically cuts years off your payoff timeline, regardless of which method you use. Before debating snowball vs avalanche, ask: "How can I find more money to throw at debt?" That question has more financial impact than strategy choice.</p>
+          <p className="leading-relaxed mb-4">Increasing your extra payment from $100 to $300/month typically cuts years off your payoff timeline, regardless of which method you use. Before debating snowball vs avalanche, ask: "How can I find more money to throw at debt?" That question has more financial impact than strategy choice.</p>
+          <p className="leading-relaxed">If your income is irregular, freeing up extra debt payments each month is harder. Our <Link href="/blog/gig-worker-budget-guide" className="text-emerald-600 underline">gig worker budget guide</Link> covers how to build a system that reliably generates surplus income for debt repayment.</p>
         </section>
       </article>
 

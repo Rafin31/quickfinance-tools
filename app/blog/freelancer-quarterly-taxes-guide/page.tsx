@@ -159,7 +159,8 @@ export default function FreelancerTaxGuidePage() {
             <li>Business mileage at IRS standard rate (67 cents/mile in 2026)</li>
             <li>Retirement contributions (SEP-IRA, Solo 401k can dramatically lower taxable income)</li>
           </ul>
-          <p className="leading-relaxed">A SEP-IRA lets you contribute up to 25% of net self-employment income, reducing your taxable income dollar for dollar. This is one of the most powerful tools available to freelancers.</p>
+          <p className="leading-relaxed mb-4">A SEP-IRA lets you contribute up to 25% of net self-employment income, reducing your taxable income dollar for dollar. This is one of the most powerful tools available to freelancers.</p>
+          <p className="leading-relaxed">For the full list of every deduction available in 2026 — including home office, mileage, health insurance, and retirement contributions — see our <Link href="/blog/self-employment-tax-deduction-guide" className="text-emerald-600 underline">complete self-employment tax deduction guide</Link>.</p>
         </section>
 
         <section>

@@ -153,7 +153,8 @@ export default function FreelancerEmergencyFundPage() {
           <h2 className="text-2xl font-bold text-slate-900 mb-4">Building It When Money Is Already Tight</h2>
           <p className="leading-relaxed mb-4">Looking at a 6-9 month target when you currently have $800 saved feels discouraging. The key is to treat it as a long-term project with consistent monthly contributions rather than a deadline.</p>
           <p className="leading-relaxed mb-4">A practical approach: dedicate a fixed percentage of every client payment to the emergency fund before allocating anything else. Even 5-10% per payment adds up over time. When you land a larger project or have a good month, direct a larger chunk toward it.</p>
-          <p className="leading-relaxed">Use our <Link href="/calculators/emergency-fund" className="text-emerald-600 underline">emergency fund calculator</Link> to see exactly how long it will take based on your current savings rate and target amount.</p>
+          <p className="leading-relaxed mb-4">Use our <Link href="/calculators/emergency-fund" className="text-emerald-600 underline">emergency fund calculator</Link> to see exactly how long it will take based on your current savings rate and target amount.</p>
+          <p className="leading-relaxed">For a full budgeting system built around irregular income, see our guide to <Link href="/blog/gig-worker-budget-guide" className="text-emerald-600 underline">budgeting as a gig worker when income varies every month</Link>.</p>
         </section>
       </article>
 

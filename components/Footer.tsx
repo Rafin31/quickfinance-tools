@@ -37,6 +37,8 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li><Link href="/blog" className="hover:text-emerald-400 transition-colors">Blog</Link></li>
               <li><Link href="/about" className="hover:text-emerald-400 transition-colors">About</Link></li>
+              <li><Link href="/privacy-policy" className="hover:text-emerald-400 transition-colors">Privacy Policy</Link></li>
+              <li><Link href="/terms" className="hover:text-emerald-400 transition-colors">Terms of Service</Link></li>
               <li>
                 <a
                   href="https://www.irs.gov/self-employed"
@@ -53,9 +55,13 @@ export default function Footer() {
 
         <div className="border-t border-slate-800 mt-10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
           <p>&copy; {year} QuickFinance Tools. All rights reserved.</p>
-          <p>
-            Calculators are for educational purposes. Always consult a qualified financial advisor for personalized advice.
-          </p>
+          <div className="flex flex-col sm:flex-row items-center gap-3">
+            <p>Calculators are for educational purposes only.</p>
+            <div className="flex gap-3">
+              <Link href="/privacy-policy" className="hover:text-slate-300 transition-colors">Privacy Policy</Link>
+              <Link href="/terms" className="hover:text-slate-300 transition-colors">Terms</Link>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
