@@ -156,7 +156,7 @@ export default function RootLayout({
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6464038769036359"
           crossOrigin="anonymous"
-          strategy="afterInteractive"
+          strategy="beforeInteractive"
         />
       </head>
       <body className="min-h-full flex flex-col bg-slate-50 text-slate-900" suppressHydrationWarning>
