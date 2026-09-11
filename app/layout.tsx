@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Analytics } from "@vercel/analytics/next";
+import Script from "next/script";
 
 const geist = Geist({
   variable: "--font-geist-sans",
@@ -51,6 +52,7 @@ export const metadata: Metadata = {
     "investment growth calculator",
     "debt free calculator",
   ],
+  manifest: "/site.webmanifest",
   authors: [{ name: "QuickFinance Tools" }],
   creator: "QuickFinance Tools",
   metadataBase: new URL("https://quickfinance.tools"),
@@ -149,7 +151,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${geist.variable} h-full antialiased`} suppressHydrationWarning>
-      <body className="min-h-full flex flex-col bg-slate-50 text-slate-900">
+      <head>
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6464038769036359"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
+      </head>
+      <body className="min-h-full flex flex-col bg-slate-50 text-slate-900" suppressHydrationWarning>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }} />
         <Navbar />

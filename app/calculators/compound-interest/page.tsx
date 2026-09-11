@@ -107,7 +107,6 @@ export default function CompoundInterestPage() {
           </div>
         </div>
         <CompoundInterestCalc />
-        <div className="my-10 bg-slate-100 border border-dashed border-slate-300 rounded-xl h-24 flex items-center justify-center text-slate-400 text-sm">Advertisement</div>
         <article className="prose prose-slate max-w-none mt-10">
           <h2 className="text-2xl font-bold text-slate-900 mb-4">The Mechanics of Compound Interest</h2>
           <p className="text-slate-600 leading-relaxed mb-4">Albert Einstein reportedly called compound interest the eighth wonder of the world. Whether or not he said it, the math is genuinely remarkable. What makes compound interest so powerful is not the rate - it is time.</p>

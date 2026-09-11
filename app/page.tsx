@@ -225,13 +225,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* AdSense placeholder - top banner */}
-      <div className="max-w-6xl mx-auto px-4 py-4">
-        <div className="bg-slate-100 border border-dashed border-slate-300 rounded-xl h-24 flex items-center justify-center text-slate-400 text-sm">
-          Advertisement
-        </div>
-      </div>
-
       {/* CTA */}
       <section className="bg-emerald-50 border-t border-emerald-100 py-14 px-4">
         <div className="max-w-2xl mx-auto text-center">

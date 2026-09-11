@@ -106,7 +106,6 @@ export default function SavingsGoalPage() {
           </div>
         </div>
         <SavingsGoalCalc />
-        <div className="my-10 bg-slate-100 border border-dashed border-slate-300 rounded-xl h-24 flex items-center justify-center text-slate-400 text-sm">Advertisement</div>
         <article className="prose prose-slate max-w-none mt-10">
           <h2 className="text-2xl font-bold text-slate-900 mb-4">How to Actually Hit Your Savings Goals</h2>
           <p className="text-slate-600 leading-relaxed mb-4">Most people set savings goals and fail to hit them - not because they lack discipline, but because they lack a specific number. Vague intentions like "save more" do not work. "Save $450 per month for 18 months to hit $8,500 for a car down payment" actually works.</p>

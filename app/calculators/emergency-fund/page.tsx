@@ -105,7 +105,6 @@ export default function EmergencyFundPage() {
           </div>
         </div>
         <EmergencyFundCalc />
-        <div className="my-10 bg-slate-100 border border-dashed border-slate-300 rounded-xl h-24 flex items-center justify-center text-slate-400 text-sm">Advertisement</div>
         <article className="prose prose-slate max-w-none mt-10">
           <h2 className="text-2xl font-bold text-slate-900 mb-4">Why Your Emergency Fund Size Depends on Your Income Type</h2>
           <p className="text-slate-600 leading-relaxed mb-4">The standard advice to save 3-6 months of expenses is a starting point, not a one-size-fits-all rule. How much you actually need depends heavily on how predictable your income is.</p>
