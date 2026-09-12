@@ -4,12 +4,6 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
-        source: "/:path*",
-        has: [{ type: "host", value: "www.quickfinance.tools" }],
-        destination: "https://quickfinance.tools/:path*",
-        permanent: true,
-      },
-      {
         source: "/finance-calculators/interest-calculator",
         destination: "/calculators/compound-interest",
         permanent: true,

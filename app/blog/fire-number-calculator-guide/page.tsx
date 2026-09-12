@@ -8,19 +8,19 @@ const articleJsonLd = {
   description: "Calculate your FIRE number using the 25x rule. Covers lean FIRE, fat FIRE, coast FIRE, and what the 4% withdrawal rate actually means for your retirement.",
   datePublished: "2026-05-13",
   dateModified: "2026-05-13",
-  author: { "@type": "Organization", name: "QuickFinance Tools", url: "https://quickfinance.tools" },
-  publisher: { "@type": "Organization", name: "QuickFinance Tools", url: "https://quickfinance.tools" },
-  url: "https://quickfinance.tools/blog/fire-number-calculator-guide",
-  mainEntityOfPage: "https://quickfinance.tools/blog/fire-number-calculator-guide",
+  author: { "@type": "Organization", name: "QuickFinance Tools", url: "https://www.quickfinance.tools" },
+  publisher: { "@type": "Organization", name: "QuickFinance Tools", url: "https://www.quickfinance.tools" },
+  url: "https://www.quickfinance.tools/blog/fire-number-calculator-guide",
+  mainEntityOfPage: "https://www.quickfinance.tools/blog/fire-number-calculator-guide",
 };
 
 const breadcrumbJsonLd = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://quickfinance.tools" },
-    { "@type": "ListItem", position: 2, name: "Blog", item: "https://quickfinance.tools/blog" },
-    { "@type": "ListItem", position: 3, name: "FIRE Number Guide", item: "https://quickfinance.tools/blog/fire-number-calculator-guide" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.quickfinance.tools" },
+    { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.quickfinance.tools/blog" },
+    { "@type": "ListItem", position: 3, name: "FIRE Number Guide", item: "https://www.quickfinance.tools/blog/fire-number-calculator-guide" },
   ],
 };
 
@@ -88,7 +88,7 @@ export const metadata: Metadata = {
     "coast FIRE number by age",
   ],
   alternates: {
-    canonical: "https://quickfinance.tools/blog/fire-number-calculator-guide",
+    canonical: "https://www.quickfinance.tools/blog/fire-number-calculator-guide",
   },
   openGraph: {
     title: "FIRE Number Calculator: How to Find Your Retirement Target",

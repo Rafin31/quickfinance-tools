@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next";
 
-const BASE_URL = "https://quickfinance.tools";
+const BASE_URL = "https://www.quickfinance.tools";
 
 // Dates pinned to last content update — update when page content changes
 const CALC_UPDATED = new Date("2026-04-15");

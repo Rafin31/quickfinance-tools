@@ -5,8 +5,8 @@ const breadcrumbJsonLd = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://quickfinance.tools" },
-    { "@type": "ListItem", position: 2, name: "Privacy Policy", item: "https://quickfinance.tools/privacy-policy" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.quickfinance.tools" },
+    { "@type": "ListItem", position: 2, name: "Privacy Policy", item: "https://www.quickfinance.tools/privacy-policy" },
   ],
 };
 
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description:
     "QuickFinance Tools privacy policy. All calculations run client-side. No personal data is collected. Learn what Vercel Analytics tracks and your rights.",
   alternates: {
-    canonical: "https://quickfinance.tools/privacy-policy",
+    canonical: "https://www.quickfinance.tools/privacy-policy",
   },
 };
 

@@ -8,19 +8,19 @@ const articleJsonLd = {
   description: "The standard 3-6 month emergency fund advice was designed for salaried workers. Here is how to calculate the right emergency fund size when your income is variable.",
   datePublished: "2026-04-05",
   dateModified: "2026-04-05",
-  author: { "@type": "Organization", name: "QuickFinance Tools", url: "https://quickfinance.tools" },
-  publisher: { "@type": "Organization", name: "QuickFinance Tools", url: "https://quickfinance.tools" },
-  url: "https://quickfinance.tools/blog/how-much-emergency-fund-freelancer",
-  mainEntityOfPage: "https://quickfinance.tools/blog/how-much-emergency-fund-freelancer",
+  author: { "@type": "Organization", name: "QuickFinance Tools", url: "https://www.quickfinance.tools" },
+  publisher: { "@type": "Organization", name: "QuickFinance Tools", url: "https://www.quickfinance.tools" },
+  url: "https://www.quickfinance.tools/blog/how-much-emergency-fund-freelancer",
+  mainEntityOfPage: "https://www.quickfinance.tools/blog/how-much-emergency-fund-freelancer",
 };
 
 const breadcrumbJsonLd = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://quickfinance.tools" },
-    { "@type": "ListItem", position: 2, name: "Blog", item: "https://quickfinance.tools/blog" },
-    { "@type": "ListItem", position: 3, name: "Emergency Fund for Freelancers", item: "https://quickfinance.tools/blog/how-much-emergency-fund-freelancer" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.quickfinance.tools" },
+    { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.quickfinance.tools/blog" },
+    { "@type": "ListItem", position: 3, name: "Emergency Fund for Freelancers", item: "https://www.quickfinance.tools/blog/how-much-emergency-fund-freelancer" },
   ],
 };
 
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     "self employed financial safety net",
   ],
   alternates: {
-    canonical: "https://quickfinance.tools/blog/how-much-emergency-fund-freelancer",
+    canonical: "https://www.quickfinance.tools/blog/how-much-emergency-fund-freelancer",
   },
 };
 

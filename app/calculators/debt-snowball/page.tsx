@@ -44,7 +44,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
   name: "Debt Snowball vs Avalanche Calculator",
-  url: "https://quickfinance.tools/calculators/debt-snowball",
+  url: "https://www.quickfinance.tools/calculators/debt-snowball",
   description: "Calculate debt payoff using the snowball or avalanche method. Compare both strategies side by side.",
   applicationCategory: "FinanceApplication",
   operatingSystem: "Web",
@@ -92,9 +92,9 @@ const breadcrumbJsonLd = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://quickfinance.tools" },
-    { "@type": "ListItem", position: 2, name: "Calculators", item: "https://quickfinance.tools/#calculators" },
-    { "@type": "ListItem", position: 3, name: "Debt Snowball Calculator", item: "https://quickfinance.tools/calculators/debt-snowball" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.quickfinance.tools" },
+    { "@type": "ListItem", position: 2, name: "Calculators", item: "https://www.quickfinance.tools/#calculators" },
+    { "@type": "ListItem", position: 3, name: "Debt Snowball Calculator", item: "https://www.quickfinance.tools/calculators/debt-snowball" },
   ],
 };
 

@@ -8,19 +8,19 @@ const articleJsonLd = {
   description: "Compound interest with monthly contributions grows wealth faster than lump sums. See the math, the rule of 72, and how ISA and TFSA users maximize returns.",
   datePublished: "2026-04-29",
   dateModified: "2026-04-29",
-  author: { "@type": "Organization", name: "QuickFinance Tools", url: "https://quickfinance.tools" },
-  publisher: { "@type": "Organization", name: "QuickFinance Tools", url: "https://quickfinance.tools" },
-  url: "https://quickfinance.tools/blog/compound-interest-monthly-contributions",
-  mainEntityOfPage: "https://quickfinance.tools/blog/compound-interest-monthly-contributions",
+  author: { "@type": "Organization", name: "QuickFinance Tools", url: "https://www.quickfinance.tools" },
+  publisher: { "@type": "Organization", name: "QuickFinance Tools", url: "https://www.quickfinance.tools" },
+  url: "https://www.quickfinance.tools/blog/compound-interest-monthly-contributions",
+  mainEntityOfPage: "https://www.quickfinance.tools/blog/compound-interest-monthly-contributions",
 };
 
 const breadcrumbJsonLd = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://quickfinance.tools" },
-    { "@type": "ListItem", position: 2, name: "Blog", item: "https://quickfinance.tools/blog" },
-    { "@type": "ListItem", position: 3, name: "Compound Interest Guide", item: "https://quickfinance.tools/blog/compound-interest-monthly-contributions" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.quickfinance.tools" },
+    { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.quickfinance.tools/blog" },
+    { "@type": "ListItem", position: 3, name: "Compound Interest Guide", item: "https://www.quickfinance.tools/blog/compound-interest-monthly-contributions" },
   ],
 };
 
@@ -88,7 +88,7 @@ export const metadata: Metadata = {
     "compound interest vs simple interest",
   ],
   alternates: {
-    canonical: "https://quickfinance.tools/blog/compound-interest-monthly-contributions",
+    canonical: "https://www.quickfinance.tools/blog/compound-interest-monthly-contributions",
   },
   openGraph: {
     title: "Compound Interest With Monthly Contributions: How It Works",

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "free online financial tools US UK Canada",
   ],
   alternates: {
-    canonical: "https://quickfinance.tools/about",
+    canonical: "https://www.quickfinance.tools/about",
   },
 };
 
@@ -22,8 +22,8 @@ const breadcrumbJsonLd = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://quickfinance.tools" },
-    { "@type": "ListItem", position: 2, name: "About", item: "https://quickfinance.tools/about" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.quickfinance.tools" },
+    { "@type": "ListItem", position: 2, name: "About", item: "https://www.quickfinance.tools/about" },
   ],
 };
 

@@ -8,19 +8,19 @@ const articleJsonLd = {
   description: "Find your exact monthly savings number with a savings goal calculator. Covers interest, timelines, and variable income for US, UK, and Canadian savers.",
   datePublished: "2026-04-29",
   dateModified: "2026-04-29",
-  author: { "@type": "Organization", name: "QuickFinance Tools", url: "https://quickfinance.tools" },
-  publisher: { "@type": "Organization", name: "QuickFinance Tools", url: "https://quickfinance.tools" },
-  url: "https://quickfinance.tools/blog/savings-goal-calculator-guide",
-  mainEntityOfPage: "https://quickfinance.tools/blog/savings-goal-calculator-guide",
+  author: { "@type": "Organization", name: "QuickFinance Tools", url: "https://www.quickfinance.tools" },
+  publisher: { "@type": "Organization", name: "QuickFinance Tools", url: "https://www.quickfinance.tools" },
+  url: "https://www.quickfinance.tools/blog/savings-goal-calculator-guide",
+  mainEntityOfPage: "https://www.quickfinance.tools/blog/savings-goal-calculator-guide",
 };
 
 const breadcrumbJsonLd = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://quickfinance.tools" },
-    { "@type": "ListItem", position: 2, name: "Blog", item: "https://quickfinance.tools/blog" },
-    { "@type": "ListItem", position: 3, name: "Savings Goal Guide", item: "https://quickfinance.tools/blog/savings-goal-calculator-guide" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.quickfinance.tools" },
+    { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.quickfinance.tools/blog" },
+    { "@type": "ListItem", position: 3, name: "Savings Goal Guide", item: "https://www.quickfinance.tools/blog/savings-goal-calculator-guide" },
   ],
 };
 
@@ -92,7 +92,7 @@ export const metadata: Metadata = {
     "savings goal freelancer",
   ],
   alternates: {
-    canonical: "https://quickfinance.tools/blog/savings-goal-calculator-guide",
+    canonical: "https://www.quickfinance.tools/blog/savings-goal-calculator-guide",
   },
   openGraph: {
     title: "Savings Goal Calculator: How to Hit Any Target (Guide)",

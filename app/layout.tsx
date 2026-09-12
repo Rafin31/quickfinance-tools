@@ -54,21 +54,21 @@ export const metadata: Metadata = {
   manifest: "/site.webmanifest",
   authors: [{ name: "QuickFinance Tools" }],
   creator: "QuickFinance Tools",
-  metadataBase: new URL("https://quickfinance.tools"),
+  metadataBase: new URL("https://www.quickfinance.tools"),
   alternates: {
-    canonical: "https://quickfinance.tools",
+    canonical: "https://www.quickfinance.tools",
     languages: {
-      "en-US": "https://quickfinance.tools",
-      "en-GB": "https://quickfinance.tools",
-      "en-CA": "https://quickfinance.tools",
-      "x-default": "https://quickfinance.tools",
+      "en-US": "https://www.quickfinance.tools",
+      "en-GB": "https://www.quickfinance.tools",
+      "en-CA": "https://www.quickfinance.tools",
+      "x-default": "https://www.quickfinance.tools",
     },
   },
   openGraph: {
     type: "website",
     locale: "en_US",
     alternateLocale: ["en_GB", "en_CA"],
-    url: "https://quickfinance.tools",
+    url: "https://www.quickfinance.tools",
     siteName: "QuickFinance Tools",
     title: "QuickFinance Tools – Free Personal Finance Calculators",
     description:
@@ -109,11 +109,11 @@ const websiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "QuickFinance Tools",
-  url: "https://quickfinance.tools",
+  url: "https://www.quickfinance.tools",
   description: "Free personal finance calculators for freelancers, 1099 contractors, and independent earners in the US, UK, and Canada.",
   potentialAction: {
     "@type": "SearchAction",
-    target: "https://quickfinance.tools/?q={search_term_string}",
+    target: "https://www.quickfinance.tools/?q={search_term_string}",
     "query-input": "required name=search_term_string",
   },
 };
@@ -122,7 +122,7 @@ const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "QuickFinance Tools",
-  url: "https://quickfinance.tools",
+  url: "https://www.quickfinance.tools",
   description: "Free personal finance calculators for freelancers and independent earners in the US, UK, and Canada.",
   areaServed: [
     { "@type": "Country", "name": "United States" },

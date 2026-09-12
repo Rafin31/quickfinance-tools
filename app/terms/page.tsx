@@ -5,8 +5,8 @@ const breadcrumbJsonLd = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://quickfinance.tools" },
-    { "@type": "ListItem", position: 2, name: "Terms of Service", item: "https://quickfinance.tools/terms" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.quickfinance.tools" },
+    { "@type": "ListItem", position: 2, name: "Terms of Service", item: "https://www.quickfinance.tools/terms" },
   ],
 };
 
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description:
     "QuickFinance Tools terms of service. Calculators are for educational purposes only. Read our disclaimer, acceptable use policy, and limitation of liability.",
   alternates: {
-    canonical: "https://quickfinance.tools/terms",
+    canonical: "https://www.quickfinance.tools/terms",
   },
 };
 

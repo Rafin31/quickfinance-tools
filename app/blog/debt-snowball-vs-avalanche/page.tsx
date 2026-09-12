@@ -8,19 +8,19 @@ const articleJsonLd = {
   description: "A data-driven comparison of the snowball and avalanche debt payoff methods. Learn when each works best, what the research says, and how to pick the right strategy.",
   datePublished: "2026-04-08",
   dateModified: "2026-04-08",
-  author: { "@type": "Organization", name: "QuickFinance Tools", url: "https://quickfinance.tools" },
-  publisher: { "@type": "Organization", name: "QuickFinance Tools", url: "https://quickfinance.tools" },
-  url: "https://quickfinance.tools/blog/debt-snowball-vs-avalanche",
-  mainEntityOfPage: "https://quickfinance.tools/blog/debt-snowball-vs-avalanche",
+  author: { "@type": "Organization", name: "QuickFinance Tools", url: "https://www.quickfinance.tools" },
+  publisher: { "@type": "Organization", name: "QuickFinance Tools", url: "https://www.quickfinance.tools" },
+  url: "https://www.quickfinance.tools/blog/debt-snowball-vs-avalanche",
+  mainEntityOfPage: "https://www.quickfinance.tools/blog/debt-snowball-vs-avalanche",
 };
 
 const breadcrumbJsonLd = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://quickfinance.tools" },
-    { "@type": "ListItem", position: 2, name: "Blog", item: "https://quickfinance.tools/blog" },
-    { "@type": "ListItem", position: 3, name: "Debt Snowball vs Avalanche", item: "https://quickfinance.tools/blog/debt-snowball-vs-avalanche" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.quickfinance.tools" },
+    { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.quickfinance.tools/blog" },
+    { "@type": "ListItem", position: 3, name: "Debt Snowball vs Avalanche", item: "https://www.quickfinance.tools/blog/debt-snowball-vs-avalanche" },
   ],
 };
 
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     "how to get out of debt fast",
   ],
   alternates: {
-    canonical: "https://quickfinance.tools/blog/debt-snowball-vs-avalanche",
+    canonical: "https://www.quickfinance.tools/blog/debt-snowball-vs-avalanche",
   },
 };
 

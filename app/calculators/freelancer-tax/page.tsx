@@ -44,7 +44,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
   name: "Freelancer Tax Calculator",
-  url: "https://quickfinance.tools/calculators/freelancer-tax",
+  url: "https://www.quickfinance.tools/calculators/freelancer-tax",
   description:
     "Calculate self-employment tax, federal income tax, and quarterly estimated tax payments for freelancers and 1099 contractors.",
   applicationCategory: "FinanceApplication",
@@ -101,9 +101,9 @@ const breadcrumbJsonLd = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://quickfinance.tools" },
-    { "@type": "ListItem", position: 2, name: "Calculators", item: "https://quickfinance.tools/#calculators" },
-    { "@type": "ListItem", position: 3, name: "Freelancer Tax Calculator", item: "https://quickfinance.tools/calculators/freelancer-tax" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.quickfinance.tools" },
+    { "@type": "ListItem", position: 2, name: "Calculators", item: "https://www.quickfinance.tools/#calculators" },
+    { "@type": "ListItem", position: 3, name: "Freelancer Tax Calculator", item: "https://www.quickfinance.tools/calculators/freelancer-tax" },
   ],
 };
 

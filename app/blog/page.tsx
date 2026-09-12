@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     "financial independence calculator",
   ],
   alternates: {
-    canonical: "https://quickfinance.tools/blog",
+    canonical: "https://www.quickfinance.tools/blog",
   },
 };
 

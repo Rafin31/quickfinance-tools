@@ -8,19 +8,19 @@ const articleJsonLd = {
   description: "Everything a 1099 contractor needs to know about self-employment tax, quarterly payment due dates, safe harbor rules, and how to avoid IRS penalties.",
   datePublished: "2026-04-10",
   dateModified: "2026-04-10",
-  author: { "@type": "Organization", name: "QuickFinance Tools", url: "https://quickfinance.tools" },
-  publisher: { "@type": "Organization", name: "QuickFinance Tools", url: "https://quickfinance.tools" },
-  url: "https://quickfinance.tools/blog/freelancer-quarterly-taxes-guide",
-  mainEntityOfPage: "https://quickfinance.tools/blog/freelancer-quarterly-taxes-guide",
+  author: { "@type": "Organization", name: "QuickFinance Tools", url: "https://www.quickfinance.tools" },
+  publisher: { "@type": "Organization", name: "QuickFinance Tools", url: "https://www.quickfinance.tools" },
+  url: "https://www.quickfinance.tools/blog/freelancer-quarterly-taxes-guide",
+  mainEntityOfPage: "https://www.quickfinance.tools/blog/freelancer-quarterly-taxes-guide",
 };
 
 const breadcrumbJsonLd = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://quickfinance.tools" },
-    { "@type": "ListItem", position: 2, name: "Blog", item: "https://quickfinance.tools/blog" },
-    { "@type": "ListItem", position: 3, name: "Quarterly Taxes Guide", item: "https://quickfinance.tools/blog/freelancer-quarterly-taxes-guide" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.quickfinance.tools" },
+    { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.quickfinance.tools/blog" },
+    { "@type": "ListItem", position: 3, name: "Quarterly Taxes Guide", item: "https://www.quickfinance.tools/blog/freelancer-quarterly-taxes-guide" },
   ],
 };
 
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     "self employment tax deductions",
   ],
   alternates: {
-    canonical: "https://quickfinance.tools/blog/freelancer-quarterly-taxes-guide",
+    canonical: "https://www.quickfinance.tools/blog/freelancer-quarterly-taxes-guide",
   },
   openGraph: {
     title: "The Complete Guide to Quarterly Estimated Taxes for Freelancers (2026)",

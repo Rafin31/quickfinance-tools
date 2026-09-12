@@ -8,19 +8,19 @@ const articleJsonLd = {
   description: "Every self-employment tax deduction available in 2026: home office, mileage, SEP-IRA, health insurance, and more, with the IRS rules that govern each.",
   datePublished: "2026-05-06",
   dateModified: "2026-05-06",
-  author: { "@type": "Organization", name: "QuickFinance Tools", url: "https://quickfinance.tools" },
-  publisher: { "@type": "Organization", name: "QuickFinance Tools", url: "https://quickfinance.tools" },
-  url: "https://quickfinance.tools/blog/self-employment-tax-deduction-guide",
-  mainEntityOfPage: "https://quickfinance.tools/blog/self-employment-tax-deduction-guide",
+  author: { "@type": "Organization", name: "QuickFinance Tools", url: "https://www.quickfinance.tools" },
+  publisher: { "@type": "Organization", name: "QuickFinance Tools", url: "https://www.quickfinance.tools" },
+  url: "https://www.quickfinance.tools/blog/self-employment-tax-deduction-guide",
+  mainEntityOfPage: "https://www.quickfinance.tools/blog/self-employment-tax-deduction-guide",
 };
 
 const breadcrumbJsonLd = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://quickfinance.tools" },
-    { "@type": "ListItem", position: 2, name: "Blog", item: "https://quickfinance.tools/blog" },
-    { "@type": "ListItem", position: 3, name: "SE Tax Deductions Guide", item: "https://quickfinance.tools/blog/self-employment-tax-deduction-guide" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.quickfinance.tools" },
+    { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.quickfinance.tools/blog" },
+    { "@type": "ListItem", position: 3, name: "SE Tax Deductions Guide", item: "https://www.quickfinance.tools/blog/self-employment-tax-deduction-guide" },
   ],
 };
 
@@ -88,7 +88,7 @@ export const metadata: Metadata = {
     "solo 401k vs SEP IRA freelancer",
   ],
   alternates: {
-    canonical: "https://quickfinance.tools/blog/self-employment-tax-deduction-guide",
+    canonical: "https://www.quickfinance.tools/blog/self-employment-tax-deduction-guide",
   },
   openGraph: {
     title: "Self-Employment Tax Deductions: The Complete 2026 List",

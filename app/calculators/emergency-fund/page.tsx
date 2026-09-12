@@ -44,7 +44,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
   name: "Emergency Fund Calculator",
-  url: "https://quickfinance.tools/calculators/emergency-fund",
+  url: "https://www.quickfinance.tools/calculators/emergency-fund",
   description: "Calculate how much you need in your emergency fund based on monthly expenses and income stability.",
   applicationCategory: "FinanceApplication",
   operatingSystem: "Web",
@@ -75,9 +75,9 @@ const breadcrumbJsonLd = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://quickfinance.tools" },
-    { "@type": "ListItem", position: 2, name: "Calculators", item: "https://quickfinance.tools/#calculators" },
-    { "@type": "ListItem", position: 3, name: "Emergency Fund Calculator", item: "https://quickfinance.tools/calculators/emergency-fund" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.quickfinance.tools" },
+    { "@type": "ListItem", position: 2, name: "Calculators", item: "https://www.quickfinance.tools/#calculators" },
+    { "@type": "ListItem", position: 3, name: "Emergency Fund Calculator", item: "https://www.quickfinance.tools/calculators/emergency-fund" },
   ],
 };
 

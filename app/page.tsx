@@ -37,12 +37,12 @@ export const metadata: Metadata = {
     "free financial calculators online",
   ],
   alternates: {
-    canonical: "https://quickfinance.tools",
+    canonical: "https://www.quickfinance.tools",
     languages: {
-      "en-US": "https://quickfinance.tools",
-      "en-GB": "https://quickfinance.tools",
-      "en-CA": "https://quickfinance.tools",
-      "x-default": "https://quickfinance.tools",
+      "en-US": "https://www.quickfinance.tools",
+      "en-GB": "https://www.quickfinance.tools",
+      "en-CA": "https://www.quickfinance.tools",
+      "x-default": "https://www.quickfinance.tools",
     },
   },
 };

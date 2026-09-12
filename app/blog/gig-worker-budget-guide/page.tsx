@@ -8,19 +8,19 @@ const articleJsonLd = {
   description: "Gig worker budgeting for variable income: how to smooth irregular pay, set aside taxes, build an emergency fund, and save toward goals as an independent earner.",
   datePublished: "2026-05-20",
   dateModified: "2026-05-20",
-  author: { "@type": "Organization", name: "QuickFinance Tools", url: "https://quickfinance.tools" },
-  publisher: { "@type": "Organization", name: "QuickFinance Tools", url: "https://quickfinance.tools" },
-  url: "https://quickfinance.tools/blog/gig-worker-budget-guide",
-  mainEntityOfPage: "https://quickfinance.tools/blog/gig-worker-budget-guide",
+  author: { "@type": "Organization", name: "QuickFinance Tools", url: "https://www.quickfinance.tools" },
+  publisher: { "@type": "Organization", name: "QuickFinance Tools", url: "https://www.quickfinance.tools" },
+  url: "https://www.quickfinance.tools/blog/gig-worker-budget-guide",
+  mainEntityOfPage: "https://www.quickfinance.tools/blog/gig-worker-budget-guide",
 };
 
 const breadcrumbJsonLd = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://quickfinance.tools" },
-    { "@type": "ListItem", position: 2, name: "Blog", item: "https://quickfinance.tools/blog" },
-    { "@type": "ListItem", position: 3, name: "Gig Worker Budget Guide", item: "https://quickfinance.tools/blog/gig-worker-budget-guide" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.quickfinance.tools" },
+    { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.quickfinance.tools/blog" },
+    { "@type": "ListItem", position: 3, name: "Gig Worker Budget Guide", item: "https://www.quickfinance.tools/blog/gig-worker-budget-guide" },
   ],
 };
 
@@ -92,7 +92,7 @@ export const metadata: Metadata = {
     "50 30 20 rule variable income",
   ],
   alternates: {
-    canonical: "https://quickfinance.tools/blog/gig-worker-budget-guide",
+    canonical: "https://www.quickfinance.tools/blog/gig-worker-budget-guide",
   },
   openGraph: {
     title: "Gig Worker Budget Guide: How to Manage Variable Income",

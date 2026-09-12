@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://quickfinance.tools/sitemap.xml",
+    sitemap: "https://www.quickfinance.tools/sitemap.xml",
   };
 }

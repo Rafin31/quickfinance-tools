@@ -46,7 +46,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
   name: "Savings Goal Calculator",
-  url: "https://quickfinance.tools/calculators/savings-goal",
+  url: "https://www.quickfinance.tools/calculators/savings-goal",
   description: "Calculate monthly savings needed to reach a goal, or find out when you will reach a savings target.",
   applicationCategory: "FinanceApplication",
   operatingSystem: "Web",
@@ -76,9 +76,9 @@ const breadcrumbJsonLd = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://quickfinance.tools" },
-    { "@type": "ListItem", position: 2, name: "Calculators", item: "https://quickfinance.tools/#calculators" },
-    { "@type": "ListItem", position: 3, name: "Savings Goal Calculator", item: "https://quickfinance.tools/calculators/savings-goal" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.quickfinance.tools" },
+    { "@type": "ListItem", position: 2, name: "Calculators", item: "https://www.quickfinance.tools/#calculators" },
+    { "@type": "ListItem", position: 3, name: "Savings Goal Calculator", item: "https://www.quickfinance.tools/calculators/savings-goal" },
   ],
 };
 
