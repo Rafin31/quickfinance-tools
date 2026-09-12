@@ -159,6 +159,11 @@ export default function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6464038769036359"
           crossOrigin="anonymous"
         />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-6464038769036359", enable_page_level_ads: true});`,
+          }}
+        />
       </head>
       <body className="min-h-full flex flex-col bg-slate-50 text-slate-900" suppressHydrationWarning>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
