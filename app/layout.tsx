@@ -100,6 +100,9 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  other: {
+    "google-adsense-account": "ca-pub-6464038769036359",
+  },
 };
 
 const websiteJsonLd = {
